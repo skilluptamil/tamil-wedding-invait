@@ -536,8 +536,8 @@ const BLOG_POSTS = {
     },
     date: "Aug 30, 2026",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Vintage metal letterpress type blocks and artisanal typography in atelier",
+    image: "images/blog-heidelberg-press.jpg",
+    imageAlt: "Vintage 1904 Heidelberg platen letterpress machine in artisanal wedding stationery atelier workshop",
     lead: "Why antique cast-iron platen presses produce unmatched deep tactile debossing that modern digital printers cannot mimic.",
     sections: [
       {
