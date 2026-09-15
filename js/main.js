@@ -1131,6 +1131,168 @@
     });
   }
 
+  // --- Consultation Form Validation & Submission Controller ---
+  function initConsultationForm() {
+    const form = document.getElementById('consultation-booking-form');
+    if (!form) return;
+
+    const successMsg = document.getElementById('consult-success-msg');
+    const coupleNamesInput = document.getElementById('c-names');
+    const emailInput = document.getElementById('c-email');
+    const phoneInput = document.getElementById('c-phone');
+    const dateInput = document.getElementById('c-date');
+    const venueInput = document.getElementById('c-venue');
+    const typeSelect = document.getElementById('c-type');
+
+    // Ensure success message is explicitly hidden on initial page load / refresh
+    if (successMsg) {
+      successMsg.style.display = 'none';
+      successMsg.classList.remove('is-visible');
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    const phonePattern = /^[\d\s()+\-\.]{7,25}$/;
+
+    function showFieldError(field, errorId, message) {
+      if (!field) return;
+      field.classList.add('is-invalid');
+      const errEl = document.getElementById(errorId);
+      if (errEl) {
+        if (message) errEl.textContent = message;
+        errEl.classList.add('is-visible');
+      }
+    }
+
+    function clearFieldError(field, errorId) {
+      if (!field) return;
+      field.classList.remove('is-invalid');
+      const errEl = document.getElementById(errorId);
+      if (errEl) {
+        errEl.classList.remove('is-visible');
+      }
+    }
+
+    // Attach real-time validation clearing on user interaction
+    const inputs = [
+      { el: coupleNamesInput, err: 'err-c-names', validator: (val) => val.trim().length > 0 },
+      { el: emailInput, err: 'err-c-email', validator: (val) => emailPattern.test(val.trim()) },
+      { el: phoneInput, err: 'err-c-phone', validator: (val) => phonePattern.test(val.trim()) && val.replace(/\D/g, '').length >= 7 },
+      { el: dateInput, err: 'err-c-date', validator: (val) => val.trim().length > 0 },
+      { el: venueInput, err: 'err-c-venue', validator: (val) => val.trim().length > 0 },
+      { el: typeSelect, err: 'err-c-type', validator: (val) => val && val.trim().length > 0 }
+    ];
+
+    inputs.forEach(({ el, err, validator }) => {
+      if (!el) return;
+      const clearIfValid = () => {
+        if (validator(el.value)) {
+          clearFieldError(el, err);
+        }
+      };
+      el.addEventListener('input', clearIfValid);
+      el.addEventListener('change', clearIfValid);
+      el.addEventListener('blur', clearIfValid);
+    });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      let hasErrors = false;
+      let firstInvalidEl = null;
+
+      // Validate Couple Names
+      if (!coupleNamesInput || !coupleNamesInput.value.trim()) {
+        showFieldError(coupleNamesInput, 'err-c-names', "Please enter the couple's names.");
+        if (!firstInvalidEl) firstInvalidEl = coupleNamesInput;
+        hasErrors = true;
+      } else {
+        clearFieldError(coupleNamesInput, 'err-c-names');
+      }
+
+      // Validate Email
+      if (!emailInput || !emailInput.value.trim()) {
+        showFieldError(emailInput, 'err-c-email', 'Please enter your email address.');
+        if (!firstInvalidEl) firstInvalidEl = emailInput;
+        hasErrors = true;
+      } else if (!emailPattern.test(emailInput.value.trim())) {
+        showFieldError(emailInput, 'err-c-email', 'Please enter a valid email address (e.g. name@domain.com).');
+        if (!firstInvalidEl) firstInvalidEl = emailInput;
+        hasErrors = true;
+      } else {
+        clearFieldError(emailInput, 'err-c-email');
+      }
+
+      // Validate Phone
+      const digitsOnly = phoneInput ? phoneInput.value.replace(/\D/g, '') : '';
+      if (!phoneInput || !phoneInput.value.trim()) {
+        showFieldError(phoneInput, 'err-c-phone', 'Please enter your contact phone / WhatsApp number.');
+        if (!firstInvalidEl) firstInvalidEl = phoneInput;
+        hasErrors = true;
+      } else if (!phonePattern.test(phoneInput.value.trim()) || digitsOnly.length < 7) {
+        showFieldError(phoneInput, 'err-c-phone', 'Please enter a valid phone number (at least 7 digits).');
+        if (!firstInvalidEl) firstInvalidEl = phoneInput;
+        hasErrors = true;
+      } else {
+        clearFieldError(phoneInput, 'err-c-phone');
+      }
+
+      // Validate Wedding Date
+      if (!dateInput || !dateInput.value.trim()) {
+        showFieldError(dateInput, 'err-c-date', 'Please select your wedding date.');
+        if (!firstInvalidEl) firstInvalidEl = dateInput;
+        hasErrors = true;
+      } else {
+        clearFieldError(dateInput, 'err-c-date');
+      }
+
+      // Validate Wedding Venue
+      if (!venueInput || !venueInput.value.trim()) {
+        showFieldError(venueInput, 'err-c-venue', 'Please enter your wedding venue and city.');
+        if (!firstInvalidEl) firstInvalidEl = venueInput;
+        hasErrors = true;
+      } else {
+        clearFieldError(venueInput, 'err-c-venue');
+      }
+
+      // Validate Appointment Format
+      if (!typeSelect || !typeSelect.value.trim()) {
+        showFieldError(typeSelect, 'err-c-type', 'Please select an appointment format.');
+        if (!firstInvalidEl) firstInvalidEl = typeSelect;
+        hasErrors = true;
+      } else {
+        clearFieldError(typeSelect, 'err-c-type');
+      }
+
+      // If invalid, hide success message, focus first error field and stop
+      if (hasErrors) {
+        if (successMsg) {
+          successMsg.style.display = 'none';
+          successMsg.classList.remove('is-visible');
+        }
+        if (firstInvalidEl) {
+          firstInvalidEl.focus();
+          firstInvalidEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        return;
+      }
+
+      // If valid, display the success message dynamically below the button
+      if (successMsg) {
+        successMsg.style.display = 'block';
+        successMsg.classList.add('is-visible');
+        successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      showToast('Consultation request received! Our concierge will contact you shortly.', 'success');
+
+      // Reset form input values while keeping the success message visible
+      form.reset();
+
+      // Clear any remaining is-invalid classes after reset
+      inputs.forEach(({ el, err }) => clearFieldError(el, err));
+    });
+  }
+
   // --- Initialize Everything On DOM Ready ---
   document.addEventListener('DOMContentLoaded', () => {
     initTheme();
@@ -1139,6 +1301,7 @@
     initAccordions();
     initModals();
     initPasswordToggles();
+    initConsultationForm();
 
     // Event listeners for theme and direction buttons
     document.querySelectorAll('.theme-toggle-btn').forEach(btn => {

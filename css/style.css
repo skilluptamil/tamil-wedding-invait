@@ -2573,12 +2573,37 @@ textarea.form-control {
 
 .form-feedback.error {
   color: #DC2626;
+  display: none;
+}
+
+.form-feedback.error.is-visible {
   display: block;
 }
 
 .form-feedback.success {
   color: #16A34A;
+  display: none;
+}
+
+.form-feedback.success.is-visible {
   display: block;
+  animation: fadeInFeedback 0.35s ease-out forwards;
+}
+
+.form-control.is-invalid {
+  border-color: #DC2626 !important;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15) !important;
+}
+
+@keyframes fadeInFeedback {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* --- Footer --- */
