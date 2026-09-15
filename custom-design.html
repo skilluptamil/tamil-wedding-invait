@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Design Studio &amp; Live Price Estimator — Aura &amp; Vellum</title>
+  <meta name="description" content="Design your dream wedding invitation suite online. Select paper stocks, printing methods, wax seals, and ribbons with real-time price estimation.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+</head>
+<body>
+
+  <!-- Luxury Sticky Navbar -->
+  <header class="navbar" id="main-nav">
+    <div class="container-wide nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Aura and Vellum Home">
+        <div class="nav-logo-mark">AV</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-brand">AURA &amp; VELLUM</span>
+          <span class="nav-logo-sub">Haute Couture Stationery</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu (Strictly 5 Navigation Items) -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <div class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link" aria-haspopup="true">
+            Home
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="nav-dropdown">
+            <a href="index.html" class="dropdown-link">Home One</a>
+            <a href="home-2.html" class="dropdown-link">Home Two</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link">About Us</a>
+        </div>
+        <div class="nav-item">
+          <a href="services.html" class="nav-link">Services</a>
+        </div>
+        <div class="nav-item">
+          <a href="blog.html" class="nav-link">Blog</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </div>
+      </nav>
+
+      <!-- Right Nav Controls (LTR/RTL, Dark/Light, Login) -->
+      <div class="nav-actions">
+        <!-- LTR / RTL Direction Toggle -->
+        <button type="button" class="control-pill-btn lang-toggle-btn" aria-label="Toggle language direction">
+          <span class="dir-label" style="font-weight: 700; font-size: 0.75rem;">RTL</span>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button type="button" class="control-pill-btn theme-toggle-btn" aria-label="Toggle theme">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+
+        <!-- Login Button -->
+        <a href="login.html" class="btn btn-primary btn-sm nav-login-btn" style="padding: 0.48rem 1.25rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Login
+        </a>
+
+        <button type="button" class="hamburger-btn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu (Strictly 5 items + Login) -->
+  <div class="mobile-nav-drawer" id="mobile-menu">
+    <div class="mobile-nav-links">
+      <div style="border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem;">
+        <a href="#" class="mobile-nav-link mobile-dropdown-toggle" style="display: flex; justify-content: space-between; align-items: center; border-bottom: none;">
+          <span>Home</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform var(--transition-normal);"><path d="m6 9 6 6 6-6"/></svg>
+        </a>
+        <div class="mobile-dropdown-content" style="display: none; padding-inline-start: 1.25rem; margin-top: 0.5rem;">
+          <a href="index.html" class="dropdown-link" style="display: block; padding: 0.4rem 0;">Home One</a>
+          <a href="home-2.html" class="dropdown-link" style="display: block; padding: 0.4rem 0;">Home Two</a>
+        </div>
+      </div>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="blog.html" class="mobile-nav-link">Blog</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
+      <a href="login.html" class="btn btn-primary nav-login-btn" style="width: 100%;">Login to Portal</a>
+      <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Book Consultation</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="section-padding-sm" style="background: var(--bg-secondary); border-bottom: 1px solid var(--border-color); text-align: center;">
+      <div class="container" style="max-width: 820px;">
+        <div class="section-eyebrow">Interactive Bespoke Configurator</div>
+        <h1 style="font-size: clamp(2.4rem, 4.5vw, 3.8rem); margin-bottom: 1.25rem;">Curate &amp; Price Your Custom Suite</h1>
+        <p class="lead">
+          Select card formats, tactile cotton weights, hot foil finishes, and hand-embellishments. Watch your suite summary and price update in real-time.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONFIGURATOR WORKSPACE -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="configurator-layout">
+          
+          <!-- LEFT: Step-by-Step Options Form -->
+          <div class="configurator-steps">
+            <form id="suite-configurator-form">
+
+              <!-- STEP 1: Format -->
+              <div class="config-step">
+                <div class="config-step-title">
+                  <span class="config-step-badge">1</span>
+                  <span>Select Suite Format &amp; Enclosure</span>
+                </div>
+                <div class="option-cards-grid">
+                  <label class="option-card selected">
+                    <input type="radio" name="config-format" checked data-name="4-Piece Classic Suite" data-price="650">
+                    <div style="font-size: 1.5rem; color: var(--gold-primary); margin-bottom: 0.25rem;">🗂️</div>
+                    <div class="option-card-title">4-Piece Classic Suite</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Main Invite + RSVP + Details + Outer Envelope</div>
+                    <div class="option-card-price">Base: $650</div>
+                  </label>
+
+                  <label class="option-card">
+                    <input type="radio" name="config-format" data-name="5-Piece Pocketfold & Wrap" data-price="820">
+                    <div style="font-size: 1.5rem; color: var(--gold-primary); margin-bottom: 0.25rem;">💌</div>
+                    <div class="option-card-title">5-Piece Pocketfold</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Cardstock Pocket Jacket + 3 Tiered Inserts</div>
+                    <div class="option-card-price">Base: $820</div>
+                  </label>
+
+                  <label class="option-card">
+                    <input type="radio" name="config-format" data-name="6-Piece Royal Keepsake Box" data-price="1150">
+                    <div style="font-size: 1.5rem; color: var(--gold-primary); margin-bottom: 0.25rem;">🎁</div>
+                    <div class="option-card-title">6-Piece Velvet Folio</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Hardbound Velvet Box + Complete Inserts</div>
+                    <div class="option-card-price">Base: $1,150</div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- STEP 2: Paper Stock -->
+              <div class="config-step">
+                <div class="config-step-title">
+                  <span class="config-step-badge">2</span>
+                  <span>Select Paper Stock &amp; Weight</span>
+                </div>
+                <div class="option-cards-grid">
+                  <label class="option-card selected">
+                    <input type="radio" name="config-paper" checked data-name="Handmade Deckle-Edge Cotton (350gsm)" data-price="150">
+                    <div class="option-card-title">Handmade Deckle Cotton</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Feathery organic edge, 350gsm pure cotton</div>
+                    <div class="option-card-price">+$150</div>
+                  </label>
+
+                  <label class="option-card">
+                    <input type="radio" name="config-paper" data-name="Duplex Ultra-Thick Cotton (600gsm)" data-price="220">
+                    <div class="option-card-title">Duplexed Cotton (600gsm)</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Heavyweight museum board, smooth edges</div>
+                    <div class="option-card-price">+$220</div>
+                  </label>
+
+                  <label class="option-card">
+                    <input type="radio" name="config-paper" data-name="Frosted Translucent Vellum (180gsm)" data-price="110">
+                    <div class="option-card-title">Frosted Vellum Wrap</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Ethereal translucent protective jacket</div>
+                    <div class="option-card-price">+$110</div>
+                  </label>
+
+                  <label class="option-card">
+                    <input type="radio" name="config-paper" data-name="Polished Clear Acrylic (2mm)" data-price="290">
+                    <div class="option-card-title">Clear Cast Acrylic (2mm)</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Rigid glass-like clarity with beveled edges</div>
+                    <div class="option-card-price">+$290</div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- STEP 3: Print Method -->
+              <div class="config-step">
+                <div class="config-step-title">
+                  <span class="config-step-badge">3</span>
+                  <span>Select Primary Printing Technique</span>
+                </div>
+                <div class="option-cards-grid">
+                  <label class="option-card selected">
+                    <input type="radio" name="config-print" checked data-name="Artisan Hot Foil Stamping (Gold)" data-price="220">
+                    <div class="option-card-title">Hot Foil Stamping</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Metallic champagne luster pressed with copper die</div>
+                    <div class="option-card-price">+$220</div>
+                  </label>
+
+                  <label class="option-card">
+                    <input type="radio" name="config-print" data-name="Heidelberg Letterpress Deboss" data-price="180">
+                    <div class="option-card-title">Letterpress Deboss</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Deep tactile indent with matte oil pigment ink</div>
+                    <div class="option-card-price">+$180</div>
+                  </label>
+
+                  <label class="option-card">
+                    <input type="radio" name="config-print" data-name="Sculpted Blind Debossing" data-price="140">
+                    <div class="option-card-title">Blind Embossing</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Pure 3D relief without ink or foil, architectural</div>
+                    <div class="option-card-price">+$140</div>
+                  </label>
+
+                  <label class="option-card">
+                    <input type="radio" name="config-print" data-name="Archival Digital Pigment" data-price="80">
+                    <div class="option-card-title">High-Pigment Digital</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Smooth crisp flat ink, ideal for watercolor floral art</div>
+                    <div class="option-card-price">+$80</div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- STEP 4: Embellishments -->
+              <div class="config-step">
+                <div class="config-step-title">
+                  <span class="config-step-badge">4</span>
+                  <span>Select Handcrafted Embellishments (Select Multiple)</span>
+                </div>
+                <div class="option-cards-grid">
+                  <label class="option-card selected">
+                    <input type="checkbox" name="config-embellish" id="wax-seal" checked data-name="Custom Monogram Wax Seal" data-price="95">
+                    <div class="option-card-title">Custom Wax Seal</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Monogram wax stamp on envelopes or wraps</div>
+                    <div class="option-card-price">+$95</div>
+                  </label>
+
+                  <label class="option-card selected">
+                    <input type="checkbox" name="config-embellish" id="silk-ribbon" checked data-name="Hand-Dyed Raw Silk Ribbon" data-price="85">
+                    <div class="option-card-title">Italian Silk Ribbon</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Feathered raw-edge silk floss ribbon tie</div>
+                    <div class="option-card-price">+$85</div>
+                  </label>
+
+                  <label class="option-card">
+                    <input type="checkbox" name="config-embellish" id="foil-liner" data-name="Custom Foil Envelope Liner" data-price="90">
+                    <div class="option-card-title">Foil Envelope Liner</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Lined interior with botanical or monogram foil</div>
+                    <div class="option-card-price">+$90</div>
+                  </label>
+
+                  <label class="option-card">
+                    <input type="checkbox" name="config-embellish" id="calligraphy-address" data-name="Hand Calligraphy Addressing" data-price="250">
+                    <div class="option-card-title">Calligraphy Addressing</div>
+                    <div style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Every guest envelope hand-lettered with gold dip nib</div>
+                    <div class="option-card-price">+$250</div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- STEP 5: Quantity Tier -->
+              <div class="config-step">
+                <div class="config-step-title">
+                  <span class="config-step-badge">5</span>
+                  <span>Select Desired Suite Quantity</span>
+                </div>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                  <button type="button" class="btn btn-secondary qty-select-btn" data-qty="50">50 Sets</button>
+                  <button type="button" class="btn btn-secondary qty-select-btn" data-qty="75">75 Sets</button>
+                  <button type="button" class="btn btn-primary qty-select-btn active" data-qty="100">100 Sets (Recommended)</button>
+                  <button type="button" class="btn btn-secondary qty-select-btn" data-qty="150">150 Sets</button>
+                  <button type="button" class="btn btn-secondary qty-select-btn" data-qty="200">200 Sets</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- RIGHT: Sticky Real-time Summary Box -->
+          <div class="configurator-preview-sticky">
+            <div class="preview-mockup-frame">
+              <!-- Mockup Image representing studio table -->
+              <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Design desk preview" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85;">
+              <div style="position: absolute; bottom: 8px; right: 12px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px;">Live Preview</div>
+            </div>
+
+            <h3 style="font-size: 1.35rem; margin-bottom: 1.25rem;">Suite Specification</h3>
+
+            <div class="preview-summary-list">
+              <div class="preview-summary-row">
+                <span>Format:</span>
+                <span id="summary-format">4-Piece Classic Suite</span>
+              </div>
+              <div class="preview-summary-row">
+                <span>Paper:</span>
+                <span id="summary-paper">Handmade Deckle-Edge Cotton (350gsm)</span>
+              </div>
+              <div class="preview-summary-row">
+                <span>Printing:</span>
+                <span id="summary-print">Artisan Hot Foil Stamping (Gold)</span>
+              </div>
+              <div class="preview-summary-row">
+                <span>Embellishments:</span>
+                <span id="summary-embellishments" style="text-align: end; max-width: 60%;">Custom Monogram Wax Seal, Hand-Dyed Raw Silk Ribbon</span>
+              </div>
+              <div class="preview-summary-row">
+                <span>Quantity:</span>
+                <span id="summary-qty">100 Suites</span>
+              </div>
+              <div class="preview-summary-row" style="border-top: 1px dashed var(--border-light); padding-top: 0.5rem; margin-top: 0.5rem;">
+                <span>Unit Cost:</span>
+                <span id="summary-per-suite" style="color: var(--gold-primary); font-weight: 700;">$12.00 / suite</span>
+              </div>
+            </div>
+
+            <div class="preview-total-row">
+              <div>
+                <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.05em;">Estimated Investment</div>
+                <div class="preview-total-price" id="summary-total-price">$1,200</div>
+              </div>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Includes white-glove assembly</span>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-lg" id="config-submit-btn" style="width: 100%;">
+              <span>Lock Configuration &amp; Request Quote</span>
+            </button>
+            <p style="font-size: 0.75rem; text-align: center; color: var(--text-muted); margin-top: 0.75rem;">
+              No payment required today. A senior designer will review your specs and send digital proofs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- QUOTATION SUMMARY MODAL -->
+  <div class="modal-overlay" id="quote-summary-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button type="button" class="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="section-eyebrow no-decor">Draft Proposal Created</div>
+      <h2 id="modal-title" style="font-size: 1.8rem; margin-bottom: 0.75rem;">Submit Your Custom Configuration</h2>
+      <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+        Your configuration has been saved. Please provide your event details to receive your formal bespoke quotation and complimentary digital proof sketch.
+      </p>
+
+      <form onsubmit="event.preventDefault(); window.closeModal('quote-summary-modal'); window.showToast('Configuration submitted! We will email your formal proposal within 12 hours.', 'success');">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Couple Names *</label>
+            <input type="text" required class="form-control" placeholder="e.g. Charlotte &amp; William">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" required class="form-control" placeholder="name@domain.com">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Phone / WhatsApp</label>
+            <input type="tel" class="form-control" placeholder="+1 (555) 000-0000">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Wedding Date</label>
+            <input type="date" required class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Any specific monogram or color requests?</label>
+          <textarea class="form-control" style="min-height: 80px;" placeholder="Tell us if you have a venue sketch or specific Pantone shade in mind..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+          Submit Atelier Quotation Request &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div>
+          <a href="index.html" class="nav-logo" style="margin-bottom: 1rem;">
+            <div class="nav-logo-mark">AV</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-brand">AURA &amp; VELLUM</span>
+              <span class="nav-logo-sub">Haute Couture Stationery</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            An artisanal letterpress and bespoke wedding stationery atelier dedicated to celebrating extraordinary love stories with heirloom-quality cotton paper, hot foil stamping, and calligraphy.
+          </p>
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="#" class="btn-icon" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" x2="12" y1="8" y2="16"/><line x1="8" x2="16" y1="12" y2="12"/></svg>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-title">Explore Atelier</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home One — Signature Suites</a></li>
+            <li><a href="home-2.html" class="footer-link">Home Two — Letterpress Studio</a></li>
+            <li><a href="about.html" class="footer-link">Our Heritage &amp; Artisans</a></li>
+            <li><a href="products.html" class="footer-link">Invitation Collections</a></li>
+            <li><a href="custom-design.html" class="footer-link">Custom Design Builder</a></li>
+            <li><a href="pricing.html" class="footer-link">Investment &amp; Packages</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services & Details -->
+        <div>
+          <h4 class="footer-title">Craftsmanship</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Bespoke Wedding Suites</a></li>
+            <li><a href="service-details.html" class="footer-link">Hot Foil &amp; Letterpress</a></li>
+            <li><a href="printing-delivery.html" class="footer-link">Paper Weights &amp; Foils</a></li>
+            <li><a href="printing-delivery.html" class="footer-link">Worldwide Delivery Guide</a></li>
+            <li><a href="dashboard.html" class="footer-link">Client Proofing Portal</a></li>
+            <li><a href="blog.html" class="footer-link">Etiquette &amp; Journal</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter & Showroom Contact -->
+        <div>
+          <h4 class="footer-title">Join The Atelier Circle</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Subscribe to receive private preview invitations to seasonal collection launches and bridal styling guides.
+          </p>
+          <form onsubmit="event.preventDefault(); window.showToast('Thank you for subscribing to Aura &amp; Vellum!', 'success');" style="display: flex; gap: 0.5rem; margin-bottom: 1.25rem;">
+            <input type="email" required placeholder="Enter your email address" class="form-control" style="font-size: 0.88rem; padding: 0.6rem 1rem;">
+            <button type="submit" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Join</button>
+          </form>
+          <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+            <div><strong>Flagship Atelier:</strong> 482 Broome Street, SoHo, NY 10013</div>
+            <div><strong>Inquiries:</strong> concierge@auravellum.com &bull; +1 (212) 555-0198</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Aura &amp; Vellum Haute Couture Stationery Atelier. All Rights Reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#privacy" data-open-sheet="privacy" class="footer-link">Privacy Policy</a>
+          <a href="#terms" data-open-sheet="terms" class="footer-link">Terms of Commission</a>
+          <a href="#launches" data-open-sheet="launches" class="footer-link">Seasonal Launch</a>
+          <a href="#showroom" data-open-sheet="showroom" class="footer-link">Showroom Hours</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLOBAL LOGIN MODAL -->
+  <div class="modal-overlay" id="global-login-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+    <div class="modal-container" style="max-width: 460px;">
+      <button type="button" class="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 1.75rem;">
+        <div class="section-eyebrow no-decor">Client Portal</div>
+        <h3 id="login-modal-title" style="font-size: 1.8rem; margin-bottom: 0.35rem;">Sign In to Atelier</h3>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">Access your digital proofs, revisions, and order tracking.</p>
+      </div>
+
+      <!-- Tab Switcher -->
+      <div style="display: flex; border-bottom: 1px solid var(--border-light); margin-bottom: 1.5rem;">
+        <button type="button" id="modal-tab-login" onclick="document.getElementById('modal-form-login').style.display='block'; document.getElementById('modal-form-register').style.display='none'; this.style.borderBottom='2px solid var(--gold-primary)'; this.style.color='var(--gold-primary)'; document.getElementById('modal-tab-reg').style.borderBottom='none'; document.getElementById('modal-tab-reg').style.color='var(--text-secondary)';" style="flex: 1; padding: 0.6rem; background: none; border: none; border-bottom: 2px solid var(--gold-primary); color: var(--gold-primary); font-weight: 600; cursor: pointer; font-size: 0.9rem;">
+          Sign In
+        </button>
+        <button type="button" id="modal-tab-reg" onclick="document.getElementById('modal-form-login').style.display='none'; document.getElementById('modal-form-register').style.display='block'; this.style.borderBottom='2px solid var(--gold-primary)'; this.style.color='var(--gold-primary)'; document.getElementById('modal-tab-login').style.borderBottom='none'; document.getElementById('modal-tab-login').style.color='var(--text-secondary)';" style="flex: 1; padding: 0.6rem; background: none; border: none; color: var(--text-secondary); font-weight: 600; cursor: pointer; font-size: 0.9rem;">
+          Register
+        </button>
+      </div>
+
+      <!-- Sign In Form -->
+      <form id="modal-form-login" onsubmit="event.preventDefault(); window.showToast('Signing in... Redirecting to dashboard', 'success'); setTimeout(() => window.location.href='dashboard.html', 800);">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modal-login-email" style="font-size: 0.82rem;">Email / Username *</label>
+          <input type="email" id="modal-login-email" required class="form-control" placeholder="name@domain.com" value="concierge@auravellum.com" style="padding: 0.65rem 0.95rem;">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+            <label class="form-label" for="modal-login-password" style="font-size: 0.82rem; margin: 0;">Password *</label>
+            <a href="#" onclick="event.preventDefault(); window.showToast('Reset link dispatched to your email.', 'info');" style="font-size: 0.78rem; color: var(--gold-primary);">Forgot?</a>
+          </div>
+          <div style="position: relative;">
+            <input type="password" id="modal-login-password" required class="form-control" placeholder="••••••••" value="Heirloom2026!" style="padding: 0.65rem 0.95rem;">
+            <button type="button" class="password-toggle-btn" data-target="modal-login-password" style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 0.78rem; color: var(--gold-primary); cursor: pointer;">
+              Show
+            </button>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+          <label style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: var(--text-secondary); cursor: pointer;">
+            <input type="checkbox" checked style="accent-color: var(--gold-primary);">
+            Remember me
+          </label>
+          <a href="dashboard.html" style="font-size: 0.82rem; color: var(--gold-primary); font-weight: 600;">Admin View &rarr;</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem;">
+          Sign In to Portal &rarr;
+        </button>
+      </form>
+
+      <!-- Register Form -->
+      <form id="modal-form-register" style="display: none;" onsubmit="event.preventDefault(); window.showToast('Registration submitted! Confirmation email sent.', 'success'); window.closeModal('global-login-modal');">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modal-reg-name" style="font-size: 0.82rem;">Couple Names *</label>
+          <input type="text" id="modal-reg-name" required class="form-control" placeholder="e.g. Elena &amp; Julian" style="padding: 0.65rem 0.95rem;">
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modal-reg-email" style="font-size: 0.82rem;">Email *</label>
+          <input type="email" id="modal-reg-email" required class="form-control" placeholder="name@domain.com" style="padding: 0.65rem 0.95rem;">
+        </div>
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label class="form-label" for="modal-reg-password" style="font-size: 0.82rem;">Create Password *</label>
+          <input type="password" id="modal-reg-password" required class="form-control" placeholder="Min. 8 characters" style="padding: 0.65rem 0.95rem;">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem;">
+          Create Account &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/configurator.js"></script>
+</body>
+</html>

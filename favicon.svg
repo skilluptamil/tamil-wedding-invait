@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5DE98"/>
+      <stop offset="45%" stop-color="#B89758"/>
+      <stop offset="100%" stop-color="#8C6D3B"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241E1C"/>
+      <stop offset="100%" stop-color="#141110"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="2"/>
+  <circle cx="32" cy="32" r="26.5" fill="none" stroke="url(#goldGrad)" stroke-width="0.75" stroke-dasharray="2 1.5" opacity="0.7"/>
+
+  <!-- Top Crown / Fleur-de-lis Crest Motif -->
+  <path d="M32 12 C32.8 14 34.5 15.5 36 16 C34 16.5 33 17.5 32 19 C31 17.5 30 16.5 28 16 C29.5 15.5 31.2 14 32 12 Z" fill="url(#goldGrad)"/>
+
+  <!-- Central Intertwined Monogram A & V -->
+  <g fill="url(#goldGrad)" font-family="'Cinzel', 'Cormorant Garamond', 'Times New Roman', Georgia, serif" font-size="20" font-weight="600" text-anchor="middle">
+    <text x="32" y="38" letter-spacing="1">AV</text>
+  </g>
+
+  <!-- Small Bottom Star Accent -->
+  <circle cx="32" cy="47" r="1.5" fill="url(#goldGrad)"/>
+  <line x1="23" y1="47" x2="29" y2="47" stroke="url(#goldGrad)" stroke-width="0.8" opacity="0.6"/>
+  <line x1="35" y1="47" x2="41" y2="47" stroke="url(#goldGrad)" stroke-width="0.8" opacity="0.6"/>
+</svg>

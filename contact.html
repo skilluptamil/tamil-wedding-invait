@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Design Consultation &amp; Showroom Contact — Aura &amp; Vellum</title>
+  <meta name="description" content="Schedule your private wedding stationery design consultation in our SoHo Manhattan atelier or via virtual appointment. Inquire about bespoke wedding suites.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+</head>
+<body>
+
+  <!-- Luxury Sticky Navbar -->
+  <header class="navbar" id="main-nav">
+    <div class="container-wide nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Aura and Vellum Home">
+        <div class="nav-logo-mark">AV</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-brand">AURA &amp; VELLUM</span>
+          <span class="nav-logo-sub">Haute Couture Stationery</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu (Strictly 5 Navigation Items) -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <div class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link" aria-haspopup="true">
+            Home
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="nav-dropdown">
+            <a href="index.html" class="dropdown-link">Home One</a>
+            <a href="home-2.html" class="dropdown-link">Home Two</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link">About Us</a>
+        </div>
+        <div class="nav-item">
+          <a href="services.html" class="nav-link">Services</a>
+        </div>
+        <div class="nav-item">
+          <a href="blog.html" class="nav-link">Blog</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link active">Contact Us</a>
+        </div>
+      </nav>
+
+      <!-- Right Nav Controls (LTR/RTL, Dark/Light, Login) -->
+      <div class="nav-actions">
+        <!-- LTR / RTL Direction Toggle -->
+        <button type="button" class="control-pill-btn lang-toggle-btn" aria-label="Toggle language direction">
+          <span class="dir-label" style="font-weight: 700; font-size: 0.75rem;">RTL</span>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button type="button" class="control-pill-btn theme-toggle-btn" aria-label="Toggle theme">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+
+        <!-- Login Button -->
+        <a href="login.html" class="btn btn-primary btn-sm nav-login-btn" style="padding: 0.48rem 1.25rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Login
+        </a>
+
+        <button type="button" class="hamburger-btn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu (Strictly 5 items + Login) -->
+  <div class="mobile-nav-drawer" id="mobile-menu">
+    <div class="mobile-nav-links">
+      <div style="border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem;">
+        <a href="#" class="mobile-nav-link mobile-dropdown-toggle" style="display: flex; justify-content: space-between; align-items: center; border-bottom: none;">
+          <span>Home</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform var(--transition-normal);"><path d="m6 9 6 6 6-6"/></svg>
+        </a>
+        <div class="mobile-dropdown-content" style="display: none; padding-inline-start: 1.25rem; margin-top: 0.5rem;">
+          <a href="index.html" class="dropdown-link" style="display: block; padding: 0.4rem 0;">Home One</a>
+          <a href="home-2.html" class="dropdown-link" style="display: block; padding: 0.4rem 0;">Home Two</a>
+        </div>
+      </div>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="blog.html" class="mobile-nav-link">Blog</a>
+      <a href="contact.html" class="mobile-nav-link active">Contact Us</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
+      <a href="login.html" class="btn btn-primary nav-login-btn" style="width: 100%;">Login to Portal</a>
+      <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Book Consultation</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="section-padding-sm" style="background: var(--bg-secondary); border-bottom: 1px solid var(--border-color); text-align: center;">
+      <div class="container" style="max-width: 780px;">
+        <div class="section-eyebrow">Connect With Our Designers</div>
+        <h1 style="font-size: clamp(2.4rem, 4.5vw, 3.8rem); margin-bottom: 1.25rem;">Book Your Private Design Consultation</h1>
+        <p class="lead">
+          Whether in our SoHo Manhattan salon or via virtual appointment, we invite you to begin your bespoke wedding stationery journey.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT GRID & BOOKING FORM -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="grid-2" style="gap: 4rem; align-items: start;">
+
+          <!-- LEFT: Contact Details & Showroom Visual -->
+          <div>
+            <div class="section-eyebrow no-decor">Flagship Atelier</div>
+            <h2 class="section-title">Visit Our SoHo Studio Lounge</h2>
+            <p style="margin-bottom: 2rem;">
+              Step into our light-filled Broome Street atelier to feel our archival cotton boards, examine metallic foil dies, and explore wax seal colors over a glass of champagne.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2.5rem;">
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div class="btn-icon" style="flex-shrink: 0;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                <div>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem;">Showroom Address</h4>
+                  <p style="font-size: 0.92rem; color: var(--text-secondary); margin: 0;">482 Broome Street, 3rd Floor, SoHo<br>New York, NY 10013, USA</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div class="btn-icon" style="flex-shrink: 0;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+                <div>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem;">Concierge Email &amp; Phone</h4>
+                  <p style="font-size: 0.92rem; color: var(--text-secondary); margin: 0;">
+                    concierge@auravellum.com<br>+1 (212) 555-0198 / WhatsApp Business
+                  </p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div class="btn-icon" style="flex-shrink: 0;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <div>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem;">Consultation Hours</h4>
+                  <p style="font-size: 0.92rem; color: var(--text-secondary); margin: 0;">
+                    Tuesday – Saturday: 10:00 AM – 6:00 PM EST<br>Sunday – Monday: Reserved for Private Production
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unique Showroom Image -->
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Aura & Vellum SoHo consultation lounge with display cases and paper samples" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--border-color); aspect-ratio: 16/10; object-fit: cover; width: 100%;">
+          </div>
+
+          <!-- RIGHT: Consultation Form -->
+          <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2.75rem 2.25rem; box-shadow: var(--shadow-md);">
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Schedule Your Design Session</h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 2rem;">
+              Complete the details below and our design concierge will confirm your appointment within 24 hours.
+            </p>
+
+            <form id="consultation-booking-form" onsubmit="event.preventDefault(); document.getElementById('consult-success-msg').style.display = 'block'; window.showToast('Design session scheduled! Check your email for confirmation.', 'success'); this.reset();">
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="c-names">Couple Names *</label>
+                  <input type="text" id="c-names" required class="form-control" placeholder="e.g. Madeleine &amp; Alexander">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="c-email">Email Address *</label>
+                  <input type="email" id="c-email" required class="form-control" placeholder="name@domain.com">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="c-phone">Phone / WhatsApp *</label>
+                  <input type="tel" id="c-phone" required class="form-control" placeholder="+1 (555) 000-0000">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="c-date">Wedding Date *</label>
+                  <input type="date" id="c-date" required class="form-control">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="c-venue">Wedding Venue &amp; City *</label>
+                  <input type="text" id="c-venue" required class="form-control" placeholder="e.g. Villa Ephrussi, Saint-Jean-Cap-Ferrat">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="c-guests">Estimated Suite Quantity</label>
+                  <select id="c-guests" class="form-control">
+                    <option value="50">50 Suites</option>
+                    <option value="75">75 Suites</option>
+                    <option value="100" selected>100 Suites (Standard)</option>
+                    <option value="150">150 Suites</option>
+                    <option value="200+">200+ Suites</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="c-type">Appointment Format *</label>
+                  <select id="c-type" class="form-control">
+                    <option value="in-person">In-Person at SoHo Manhattan Showroom</option>
+                    <option value="virtual">Virtual Video Consultation (Zoom)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="c-budget">Estimated Stationery Budget</label>
+                  <select id="c-budget" class="form-control">
+                    <option value="750-1500">$750 – $1,500</option>
+                    <option value="1500-3000" selected>$1,500 – $3,000</option>
+                    <option value="3000-5000">$3,000 – $5,000</option>
+                    <option value="5000+">$5,000+ (Royal Bespoke)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="c-notes">Wedding Vision &amp; Notes</label>
+                <textarea id="c-notes" class="form-control" placeholder="Share any specific design collection, wax seal crest, or palette colors you love..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                Confirm Consultation Request &rarr;
+              </button>
+
+              <div id="consult-success-msg" class="form-feedback success" style="margin-top: 1rem; text-align: center; font-size: 0.95rem;">
+                ✓ Thank you! Your consultation request has been received. Our concierge will send your calendar invite shortly.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE MAP EMBED SECTION -->
+    <section style="height: 380px; width: 100%; border-top: 1px solid var(--border-color); position: relative; overflow: hidden; background: var(--bg-secondary);">
+      <iframe title="Aura & Vellum Showroom Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.633445833441!2d-74.0042456!3d40.7227656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598c47f3b89b%3A0x6b8bc22a7f53f937!2sBroome%20St%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0; filter: grayscale(80%) contrast(1.1);" allowfullscreen="" loading="lazy"></iframe>
+      <div style="position: absolute; bottom: 20px; left: 20px; background: var(--bg-surface); padding: 1rem 1.5rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+        <strong style="font-size: 0.95rem; color: var(--text-primary); display: block;">Aura &amp; Vellum Atelier</strong>
+        <span style="font-size: 0.8rem; color: var(--gold-primary);">SoHo Design District &bull; Manhattan</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div>
+          <a href="index.html" class="nav-logo" style="margin-bottom: 1rem;">
+            <div class="nav-logo-mark">AV</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-brand">AURA &amp; VELLUM</span>
+              <span class="nav-logo-sub">Haute Couture Stationery</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            An artisanal letterpress and bespoke wedding stationery atelier dedicated to celebrating extraordinary love stories with heirloom-quality cotton paper, hot foil stamping, and calligraphy.
+          </p>
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="#" class="btn-icon" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" x2="12" y1="8" y2="16"/><line x1="8" x2="16" y1="12" y2="12"/></svg>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-title">Explore Atelier</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home One — Signature Suites</a></li>
+            <li><a href="home-2.html" class="footer-link">Home Two — Letterpress Studio</a></li>
+            <li><a href="about.html" class="footer-link">Our Heritage &amp; Artisans</a></li>
+            <li><a href="products.html" class="footer-link">Invitation Collections</a></li>
+            <li><a href="custom-design.html" class="footer-link">Custom Design Builder</a></li>
+            <li><a href="pricing.html" class="footer-link">Investment &amp; Packages</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services & Details -->
+        <div>
+          <h4 class="footer-title">Craftsmanship</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Bespoke Wedding Suites</a></li>
+            <li><a href="service-details.html" class="footer-link">Hot Foil &amp; Letterpress</a></li>
+            <li><a href="printing-delivery.html" class="footer-link">Paper Weights &amp; Foils</a></li>
+            <li><a href="printing-delivery.html" class="footer-link">Worldwide Delivery Guide</a></li>
+            <li><a href="dashboard.html" class="footer-link">Client Proofing Portal</a></li>
+            <li><a href="blog.html" class="footer-link">Etiquette &amp; Journal</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter & Showroom Contact -->
+        <div>
+          <h4 class="footer-title">Join The Atelier Circle</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Subscribe to receive private preview invitations to seasonal collection launches and bridal styling guides.
+          </p>
+          <form onsubmit="event.preventDefault(); window.showToast('Thank you for subscribing to Aura &amp; Vellum!', 'success');" style="display: flex; gap: 0.5rem; margin-bottom: 1.25rem;">
+            <input type="email" required placeholder="Enter your email address" class="form-control" style="font-size: 0.88rem; padding: 0.6rem 1rem;">
+            <button type="submit" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Join</button>
+          </form>
+          <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+            <div><strong>Flagship Atelier:</strong> 482 Broome Street, SoHo, NY 10013</div>
+            <div><strong>Inquiries:</strong> concierge@auravellum.com &bull; +1 (212) 555-0198</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Aura &amp; Vellum Haute Couture Stationery Atelier. All Rights Reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#privacy" data-open-sheet="privacy" class="footer-link">Privacy Policy</a>
+          <a href="#terms" data-open-sheet="terms" class="footer-link">Terms of Commission</a>
+          <a href="#launches" data-open-sheet="launches" class="footer-link">Seasonal Launch</a>
+          <a href="#showroom" data-open-sheet="showroom" class="footer-link">Showroom Hours</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLOBAL LOGIN MODAL -->
+  <div class="modal-overlay" id="global-login-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+    <div class="modal-container" style="max-width: 460px;">
+      <button type="button" class="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 1.75rem;">
+        <div class="section-eyebrow no-decor">Client Portal</div>
+        <h3 id="login-modal-title" style="font-size: 1.8rem; margin-bottom: 0.35rem;">Sign In to Atelier</h3>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">Access your digital proofs, revisions, and order tracking.</p>
+      </div>
+
+      <!-- Tab Switcher -->
+      <div style="display: flex; border-bottom: 1px solid var(--border-light); margin-bottom: 1.5rem;">
+        <button type="button" id="modal-tab-login" onclick="document.getElementById('modal-form-login').style.display='block'; document.getElementById('modal-form-register').style.display='none'; this.style.borderBottom='2px solid var(--gold-primary)'; this.style.color='var(--gold-primary)'; document.getElementById('modal-tab-reg').style.borderBottom='none'; document.getElementById('modal-tab-reg').style.color='var(--text-secondary)';" style="flex: 1; padding: 0.6rem; background: none; border: none; border-bottom: 2px solid var(--gold-primary); color: var(--gold-primary); font-weight: 600; cursor: pointer; font-size: 0.9rem;">
+          Sign In
+        </button>
+        <button type="button" id="modal-tab-reg" onclick="document.getElementById('modal-form-login').style.display='none'; document.getElementById('modal-form-register').style.display='block'; this.style.borderBottom='2px solid var(--gold-primary)'; this.style.color='var(--gold-primary)'; document.getElementById('modal-tab-login').style.borderBottom='none'; document.getElementById('modal-tab-login').style.color='var(--text-secondary)';" style="flex: 1; padding: 0.6rem; background: none; border: none; color: var(--text-secondary); font-weight: 600; cursor: pointer; font-size: 0.9rem;">
+          Register
+        </button>
+      </div>
+
+      <!-- Sign In Form -->
+      <form id="modal-form-login" onsubmit="event.preventDefault(); window.showToast('Signing in... Redirecting to dashboard', 'success'); setTimeout(() => window.location.href='dashboard.html', 800);">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modal-login-email" style="font-size: 0.82rem;">Email / Username *</label>
+          <input type="email" id="modal-login-email" required class="form-control" placeholder="name@domain.com" value="concierge@auravellum.com" style="padding: 0.65rem 0.95rem;">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+            <label class="form-label" for="modal-login-password" style="font-size: 0.82rem; margin: 0;">Password *</label>
+            <a href="#" onclick="event.preventDefault(); window.showToast('Reset link dispatched to your email.', 'info');" style="font-size: 0.78rem; color: var(--gold-primary);">Forgot?</a>
+          </div>
+          <div style="position: relative;">
+            <input type="password" id="modal-login-password" required class="form-control" placeholder="••••••••" value="Heirloom2026!" style="padding: 0.65rem 0.95rem;">
+            <button type="button" class="password-toggle-btn" data-target="modal-login-password" style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 0.78rem; color: var(--gold-primary); cursor: pointer;">
+              Show
+            </button>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+          <label style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: var(--text-secondary); cursor: pointer;">
+            <input type="checkbox" checked style="accent-color: var(--gold-primary);">
+            Remember me
+          </label>
+          <a href="dashboard.html" style="font-size: 0.82rem; color: var(--gold-primary); font-weight: 600;">Admin View &rarr;</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem;">
+          Sign In to Portal &rarr;
+        </button>
+      </form>
+
+      <!-- Register Form -->
+      <form id="modal-form-register" style="display: none;" onsubmit="event.preventDefault(); window.showToast('Registration submitted! Confirmation email sent.', 'success'); window.closeModal('global-login-modal');">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modal-reg-name" style="font-size: 0.82rem;">Couple Names *</label>
+          <input type="text" id="modal-reg-name" required class="form-control" placeholder="e.g. Elena &amp; Julian" style="padding: 0.65rem 0.95rem;">
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modal-reg-email" style="font-size: 0.82rem;">Email *</label>
+          <input type="email" id="modal-reg-email" required class="form-control" placeholder="name@domain.com" style="padding: 0.65rem 0.95rem;">
+        </div>
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label class="form-label" for="modal-reg-password" style="font-size: 0.82rem;">Create Password *</label>
+          <input type="password" id="modal-reg-password" required class="form-control" placeholder="Min. 8 characters" style="padding: 0.65rem 0.95rem;">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem;">
+          Create Account &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

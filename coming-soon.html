@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seasonal Collection Launch — Aura &amp; Vellum Haute Stationery</title>
+  <meta name="description" content="Prepare for the unveiling of our 2027 Florentine Gilded Botanical Collection. Register for private VIP priority ordering access.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- Header -->
+  <header style="background: var(--bg-surface); border-bottom: 1px solid var(--border-light); padding: 1.25rem 2rem;">
+    <div class="container-wide" style="display: flex; justify-content: space-between; align-items: center;">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">AV</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-brand">AURA &amp; VELLUM</span>
+          <span class="nav-logo-sub">Seasonal Launch</span>
+        </div>
+      </a>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button type="button" class="control-pill-btn lang-toggle-btn" aria-label="Toggle language direction">
+          <span class="dir-label" style="font-weight: 700; font-size: 0.75rem;">RTL</span>
+        </button>
+        <button type="button" class="control-pill-btn theme-toggle-btn" aria-label="Toggle theme">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <a href="index.html" class="btn btn-secondary btn-sm">Enter Main Atelier &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- COMING SOON HERO & COUNTDOWN -->
+  <main style="flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 4.5rem 1.5rem; background: var(--bg-secondary); position: relative;">
+    <div style="max-width: 820px; text-align: center;">
+      
+      <div class="section-eyebrow">Haute Bridal Unveiling &bull; SS 2027</div>
+      <h1 style="font-size: clamp(2.4rem, 4.5vw, 4rem); margin-bottom: 1.25rem;">
+        The Florentine Gilded Botanical Series
+      </h1>
+      <p class="lead" style="max-width: 650px; margin: 0 auto 2.5rem;">
+        Six new couture wedding suites featuring hand-pressed botanical pressings, sculpted 24K gold foil borders, and illuminated monogram cartouches.
+      </p>
+
+      <!-- LIVE JAVASCRIPT COUNTDOWN -->
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 580px; margin: 0 auto 3rem;" id="countdown-timer">
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem 1rem; box-shadow: var(--shadow-sm);">
+          <div id="count-days" style="font-family: var(--font-serif); font-size: 3rem; color: var(--gold-primary); font-weight: 600; line-height: 1;">42</div>
+          <div style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.1em; margin-top: 0.5rem;">Days</div>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem 1rem; box-shadow: var(--shadow-sm);">
+          <div id="count-hours" style="font-family: var(--font-serif); font-size: 3rem; color: var(--gold-primary); font-weight: 600; line-height: 1;">18</div>
+          <div style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.1em; margin-top: 0.5rem;">Hours</div>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem 1rem; box-shadow: var(--shadow-sm);">
+          <div id="count-minutes" style="font-family: var(--font-serif); font-size: 3rem; color: var(--gold-primary); font-weight: 600; line-height: 1;">34</div>
+          <div style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.1em; margin-top: 0.5rem;">Minutes</div>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem 1rem; box-shadow: var(--shadow-sm);">
+          <div id="count-seconds" style="font-family: var(--font-serif); font-size: 3rem; color: var(--gold-primary); font-weight: 600; line-height: 1;">52</div>
+          <div style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.1em; margin-top: 0.5rem;">Seconds</div>
+        </div>
+      </div>
+
+      <!-- VIP Priority Signup Form -->
+      <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2.5rem; max-width: 580px; margin: 0 auto; box-shadow: var(--shadow-md);">
+        <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Reserve Your VIP Early Access</h3>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+          Be the first to browse lookbooks and secure your 2027 press production slot.
+        </p>
+
+        <form onsubmit="event.preventDefault(); window.showToast('VIP invitation reserved! Lookbook will be dispatched upon unveiling.', 'success'); this.reset();">
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <input type="email" required placeholder="Enter your email address" class="form-control" style="flex: 1; min-width: 220px;">
+            <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Request Early Access</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Simple Footer -->
+  <footer style="background: var(--bg-surface); border-top: 1px solid var(--border-light); padding: 1.5rem; text-align: center; font-size: 0.85rem; color: var(--text-muted);">
+    &copy; 2026 Aura &amp; Vellum Haute Couture Stationery Atelier. All Rights Reserved. &bull; <a href="index.html" style="color: var(--gold-primary);">Explore Current Collections</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Live Countdown Timer logic
+    (function () {
+      const launchDate = new Date();
+      launchDate.setDate(launchDate.getDate() + 42);
+      launchDate.setHours(launchDate.getHours() + 18);
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = launchDate - now;
+
+        if (distance > 0) {
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          const daysEl = document.getElementById('count-days');
+          const hoursEl = document.getElementById('count-hours');
+          const minEl = document.getElementById('count-minutes');
+          const secEl = document.getElementById('count-seconds');
+
+          if (daysEl) daysEl.textContent = days;
+          if (hoursEl) hoursEl.textContent = hours < 10 ? '0' + hours : hours;
+          if (minEl) minEl.textContent = minutes < 10 ? '0' + minutes : minutes;
+          if (secEl) secEl.textContent = seconds < 10 ? '0' + seconds : seconds;
+        }
+      }
+
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+    })();
+  </script>
+</body>
+</html>

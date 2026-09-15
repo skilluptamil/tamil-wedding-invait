@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura & Vellum Atelier — Luxury Wedding Invitation & Bespoke Stationery Designer</title>
+  <meta name="description" content="Haute couture wedding invitations, antique letterpress, gold foil stamping, custom monograms, and handmade deckle-edge paper stationery for discerning couples worldwide.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+</head>
+<body>
+
+  <!-- Luxury Sticky Navbar -->
+  <header class="navbar" id="main-nav">
+    <div class="container-wide nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="Aura and Vellum Home">
+        <div class="nav-logo-mark">AV</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-brand">AURA &amp; VELLUM</span>
+          <span class="nav-logo-sub">Haute Couture Stationery</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu (Strictly 5 Navigation Items) -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <div class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link active" aria-haspopup="true">
+            Home
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="nav-dropdown">
+            <a href="index.html" class="dropdown-link active">Home One</a>
+            <a href="home-2.html" class="dropdown-link">Home Two</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link">About Us</a>
+        </div>
+        <div class="nav-item">
+          <a href="services.html" class="nav-link">Services</a>
+        </div>
+        <div class="nav-item">
+          <a href="blog.html" class="nav-link">Blog</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </div>
+      </nav>
+
+      <!-- Right Nav Controls (LTR/RTL, Dark/Light, Login) -->
+      <div class="nav-actions">
+        <!-- LTR / RTL Direction Toggle -->
+        <button type="button" class="control-pill-btn lang-toggle-btn" aria-label="Toggle language text direction (LTR / RTL)" title="Switch LTR / RTL">
+          <span class="dir-label" style="font-weight: 700; font-size: 0.75rem;">RTL</span>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button type="button" class="control-pill-btn theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Toggle Light/Dark Theme">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+
+        <!-- Login Button -->
+        <a href="login.html" class="btn btn-primary btn-sm nav-login-btn" style="padding: 0.48rem 1.25rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Login
+        </a>
+
+        <!-- Hamburger for Mobile -->
+        <button type="button" class="hamburger-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu (Strictly 5 items + Login) -->
+  <div class="mobile-nav-drawer" id="mobile-menu" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <div style="border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem;">
+        <a href="#" class="mobile-nav-link mobile-dropdown-toggle" style="display: flex; justify-content: space-between; align-items: center; border-bottom: none;">
+          <span>Home</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform var(--transition-normal);"><path d="m6 9 6 6 6-6"/></svg>
+        </a>
+        <div class="mobile-dropdown-content" style="display: none; padding-inline-start: 1.25rem; margin-top: 0.5rem;">
+          <a href="index.html" class="dropdown-link" style="display: block; padding: 0.4rem 0;">Home One</a>
+          <a href="home-2.html" class="dropdown-link" style="display: block; padding: 0.4rem 0;">Home Two</a>
+        </div>
+      </div>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="blog.html" class="mobile-nav-link">Blog</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
+      <a href="login.html" class="btn btn-primary nav-login-btn" style="width: 100%;">Login to Portal</a>
+      <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Book Consultation</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-wrapper" id="hero-section">
+      <div class="container hero-content">
+        <div class="hero-grid">
+          <div class="hero-text-col">
+            <div class="hero-badges">
+              <span class="badge-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Bespoke Bridal Stationery 2026 Collection
+              </span>
+              <span class="badge-tag" style="background: var(--bg-surface);">Heirloom Quality</span>
+            </div>
+
+            <h1 class="hero-headline">
+              First impressions of your <span class="highlight">forever love</span>, exquisitely hand-pressed.
+            </h1>
+
+            <p class="hero-desc">
+              We design and handcraft couture wedding invitations, tactile letterpress suites, shimmering gold foil debossing, and custom calligraphy that become cherished family heirlooms.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="custom-design.html" class="btn btn-primary btn-lg" id="hero-cta-custom">
+                <span>Design Your Suite</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+              <a href="products.html" class="btn btn-secondary btn-lg" id="hero-cta-explore">
+                <span>View Collections</span>
+              </a>
+            </div>
+
+            <div class="hero-features-list">
+              <div class="hero-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>100% Cotton Deckle Paper</span>
+              </div>
+              <div class="hero-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Hand-Pressed in Atelier</span>
+              </div>
+              <div class="hero-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Insured Global Shipping</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual-frame">
+            <!-- Bespoke Hero Image: Hand-Pressed Gold Foil Wedding Suite Flatlay -->
+            <img src="images/hero-handpressed-suite.jpg" alt="Exquisitely hand-pressed gold foil wedding invitation suite with deckle paper, vellum jacket, wax seal and white roses" class="hero-img-main" id="hero-main-visual">
+            
+            <div class="hero-floating-card floating-card-1">
+              <div class="floating-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </div>
+              <div>
+                <h5 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 2px;">Voted #1 Bridal Atelier</h5>
+                <p style="font-size: 0.78rem; margin: 0; color: var(--gold-primary);">Over 1,200+ bespoke suites crafted</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST & EDITORIAL PRESS SECTION -->
+    <section class="trust-bar" aria-label="Press Recognition">
+      <div class="container">
+        <p class="trust-label">Cherished &amp; Featured By International Bridal Publications</p>
+        <div class="trust-logos">
+          <span class="trust-logo-item">VOGUE WEDDINGS</span>
+          <span class="trust-logo-item">STYLE ME PRETTY</span>
+          <span class="trust-logo-item">MARTHA STEWART</span>
+          <span class="trust-logo-item">BRIDES MAGAZINE</span>
+          <span class="trust-logo-item">HARPER'S BAZAAR BRIDAL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / ATELIER PHILOSOPHY SECTION -->
+    <section class="section-padding" id="about-intro">
+      <div class="container">
+        <div class="grid-2" style="align-items: center;">
+          <div>
+            <!-- Unique About Intro Image: Artisanal Deckle Paper Mill -->
+            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80" alt="Artisan paper sheets with natural deckle edge crafted in Italian cotton mill" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--border-color); aspect-ratio: 4/3; object-fit: cover;">
+          </div>
+          <div>
+            <div class="section-eyebrow no-decor">Our Craftsmanship Heritage</div>
+            <h2 class="section-title">Where 19th-Century Letterpress Meets Haute Couture Artistry</h2>
+            <p class="lead" style="margin-bottom: 1.25rem; color: var(--text-primary);">
+              Every wedding invitation born at Aura &amp; Vellum is a symphony of raw organic textures, hand-mixed metallic pigments, and tactile debossing.
+            </p>
+            <p style="margin-bottom: 1.5rem;">
+              We source our virgin cotton rag papers from centuries-old European mills, deckle each edge by hand with feathered tearing irons, and impress typography onto heavy 600gsm boards using authentic Heidelberg windmill presses.
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; border-top: 1px solid var(--border-light); padding-top: 1.5rem;">
+              <div>
+                <h3 style="color: var(--gold-primary); font-size: 2.2rem; margin-bottom: 0.25rem;">600<span style="font-size: 1.4rem;">gsm</span></h3>
+                <p style="font-size: 0.85rem;">Museum-grade double-thick archival cotton stock.</p>
+              </div>
+              <div>
+                <h3 style="color: var(--gold-primary); font-size: 2.2rem; margin-bottom: 0.25rem;">100<span style="font-size: 1.4rem;">%</span></h3>
+                <p style="font-size: 0.85rem;">Artisanal hand-inspected pieces before packaging.</p>
+              </div>
+            </div>
+            <a href="about.html" class="btn btn-secondary">
+              <span>Read Our Full Story</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE COLLECTIONS SHOWCASE SECTION -->
+    <section class="section-padding" style="background: var(--bg-secondary); border-block: 1px solid var(--border-light);" id="featured-collections">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Curated Wedding Suites</div>
+          <h2 class="section-title">Heirloom Invitation Suites Designed to Enthrall</h2>
+          <p class="section-subtitle">
+            Explore our signature customizable wedding invitation collections, lovingly crafted with foil deboss, translucent vellum overlays, and wax seals.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <!-- Collection 1: The Heritage Crest -->
+          <article class="luxury-card">
+            <a href="products.html" class="card-img-wrap" aria-label="View The Heritage Crest Suite">
+              <!-- Unique Image: Heritage Crest Gold Foil Suite -->
+              <img src="https://images.unsplash.com/photo-1510076857177-7470076d4098?auto=format&fit=crop&w=800&q=80" alt="Gold foil stamped wedding invitation with antique monogram crest and beveled gilded edges">
+              <span class="card-badge-floating">Bespoke Foil</span>
+            </a>
+            <div class="card-body">
+              <span class="card-eyebrow">Classic Traditional</span>
+              <h3 class="card-title"><a href="products.html">The Heritage Crest</a></h3>
+              <p class="card-desc">Gilded champagne gold foil stamped on 600gsm ivory cotton board with antique Roman monogramming.</p>
+              <div class="card-footer">
+                <span style="font-weight: 600; color: var(--gold-primary); font-size: 0.95rem;">From $850 / 100 sets</span>
+                <a href="products.html" class="btn-link-luxury" aria-label="Explore Heritage Crest">View &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Collection 2: Minimalist Noir -->
+          <article class="luxury-card">
+            <a href="products.html" class="card-img-wrap" aria-label="View Minimalist Noir Suite">
+              <!-- Unique Image: Minimalist Noir Letterpress Suite -->
+              <img src="images/minimalist-noir.jpg" alt="Minimalist Noir architectural wedding invitation suite with espresso letterpress, black RSVP card, and black wax seal">
+              <span class="card-badge-floating">Letterpress</span>
+            </a>
+            <div class="card-body">
+              <span class="card-eyebrow">Modern Architecture</span>
+              <h3 class="card-title"><a href="products.html">Minimalist Noir</a></h3>
+              <p class="card-desc">Architectural editorial layout with deep blind deboss and matte espresso letterpress on crisp alabaster.</p>
+              <div class="card-footer">
+                <span style="font-weight: 600; color: var(--gold-primary); font-size: 0.95rem;">From $720 / 100 sets</span>
+                <a href="products.html" class="btn-link-luxury" aria-label="Explore Minimalist Noir">View &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Collection 3: Tuscan Botanical -->
+          <article class="luxury-card">
+            <a href="products.html" class="card-img-wrap" aria-label="View Tuscan Botanical Suite">
+              <!-- Unique Image: Tuscan Botanical Floral Suite -->
+              <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" alt="Botanical olive branch wedding invitation on handmade deckle edge cotton paper">
+              <span class="card-badge-floating">Deckle Edge</span>
+            </a>
+            <div class="card-body">
+              <span class="card-eyebrow">Romantic Meadow</span>
+              <h3 class="card-title"><a href="products.html">Tuscan Botanical</a></h3>
+              <p class="card-desc">Hand-painted watercolor olive foliage with torn feathery deckle edges and sage green wax seal accents.</p>
+              <div class="card-footer">
+                <span style="font-weight: 600; color: var(--gold-primary); font-size: 0.95rem;">From $790 / 100 sets</span>
+                <a href="products.html" class="btn-link-luxury" aria-label="Explore Tuscan Botanical">View &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Collection 4: Gilded Vellum -->
+          <article class="luxury-card">
+            <a href="products.html" class="card-img-wrap" aria-label="View Gilded Vellum Suite">
+              <!-- Unique Image: Gilded Translucent Vellum Suite -->
+              <img src="https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?auto=format&fit=crop&w=800&q=80" alt="Translucent frosted vellum wedding jacket with gold wax seal and pressed botanicals">
+              <span class="card-badge-floating">Vellum Wrap</span>
+            </a>
+            <div class="card-body">
+              <span class="card-eyebrow">Ethereal Romance</span>
+              <h3 class="card-title"><a href="products.html">Gilded Vellum</a></h3>
+              <p class="card-desc">Translucent frosted jacket bound with pure Italian silk floss and a hand-stamped rose gold wax seal.</p>
+              <div class="card-footer">
+                <span style="font-weight: 600; color: var(--gold-primary); font-size: 0.95rem;">From $880 / 100 sets</span>
+                <a href="products.html" class="btn-link-luxury" aria-label="Explore Gilded Vellum">View &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="products.html" class="btn btn-primary btn-lg">
+            <span>Explore All 24 Collections</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY ATELIER SERVICES PREVIEW -->
+    <section class="section-padding" id="services-preview">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Comprehensive Bridal Paperie</div>
+          <h2 class="section-title">Everything for Your Wedding Stationery Journey</h2>
+          <p class="section-subtitle">
+            From your very first Save the Date announcement to wedding day menus and hand-bound vow books.
+          </p>
+        </div>
+
+        <div class="journey-grid">
+          <!-- Service 1: Bespoke Suites -->
+          <article class="journey-card">
+            <div class="journey-card-header">
+              <div class="journey-icon-wrap" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <span class="journey-step-badge">Phase 01 &bull; Suites</span>
+            </div>
+            
+            <div class="journey-card-main">
+              <h3 class="journey-card-title">Bespoke Wedding Suites</h3>
+              <p class="journey-card-desc">
+                Comprehensive 4-to-6 piece paper suites including main invitations, RSVP return cards, reception details, and luxury lined envelopes.
+              </p>
+            </div>
+
+            <div class="journey-pills-wrap">
+              <div class="journey-pills">
+                <span class="journey-pill">Save the Dates</span>
+                <span class="journey-pill">Main Invitation</span>
+                <span class="journey-pill">RSVP Inserts</span>
+              </div>
+            </div>
+
+            <div class="journey-card-footer">
+              <span class="journey-footer-meta">Custom Made-to-Order</span>
+              <a href="service-details.html" class="journey-link" aria-label="Explore Bespoke Wedding Suites">
+                <span>Learn More</span>
+                <span class="arrow-icon" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 2: Letterpress & Foil Stamping -->
+          <article class="journey-card">
+            <div class="journey-card-header">
+              <div class="journey-icon-wrap" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/><path d="M5 3v4M3 5h4M19 17v4M17 19h4"/></svg>
+              </div>
+              <span class="journey-step-badge">Phase 02 &bull; Presswork</span>
+            </div>
+            
+            <div class="journey-card-main">
+              <h3 class="journey-card-title">Hot Foil &amp; Letterpress</h3>
+              <p class="journey-card-desc">
+                Deep tactile impressions pressed into pillowy cotton paper with gleaming metallic foils in Pale Gold, Rose Gold, and Antique Copper.
+              </p>
+            </div>
+
+            <div class="journey-pills-wrap">
+              <div class="journey-pills">
+                <span class="journey-pill">Deep Deboss</span>
+                <span class="journey-pill">Metallic Foil</span>
+                <span class="journey-pill">Blind Embossing</span>
+              </div>
+            </div>
+
+            <div class="journey-card-footer">
+              <span class="journey-footer-meta">Vintage Heidelberg Press</span>
+              <a href="service-details.html" class="journey-link" aria-label="Explore Hot Foil and Letterpress">
+                <span>Learn More</span>
+                <span class="arrow-icon" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 3: Day-Of Reception Stationery -->
+          <article class="journey-card">
+            <div class="journey-card-header">
+              <div class="journey-icon-wrap" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/><path d="M6 14h6"/></svg>
+              </div>
+              <span class="journey-step-badge">Phase 03 &bull; Reception</span>
+            </div>
+            
+            <div class="journey-card-main">
+              <h3 class="journey-card-title">Day-Of Event Paperie</h3>
+              <p class="journey-card-desc">
+                Seamlessly unify your wedding reception aesthetics with matching menus, place cards, custom acrylic welcome signs, and vow booklets.
+              </p>
+            </div>
+
+            <div class="journey-pills-wrap">
+              <div class="journey-pills">
+                <span class="journey-pill">Foil Dinner Menus</span>
+                <span class="journey-pill">Escort Cards</span>
+                <span class="journey-pill">Vow Booklets</span>
+              </div>
+            </div>
+
+            <div class="journey-card-footer">
+              <span class="journey-footer-meta">Event Coordination</span>
+              <a href="services.html" class="journey-link" aria-label="Explore Day-Of Event Paperie">
+                <span>Learn More</span>
+                <span class="arrow-icon" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Atelier Journey Bottom Consultation Banner -->
+        <div class="journey-banner">
+          <div class="journey-banner-content">
+            <div class="journey-banner-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            </div>
+            <div>
+              <h4 class="journey-banner-title">Looking for a tailored suite across your entire wedding timeline?</h4>
+              <p class="journey-banner-desc">Book a private 1-on-1 virtual or showroom consultation with our principal stationery director.</p>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-secondary btn-sm journey-banner-cta">
+            <span>Schedule Consultation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US & ATELIER STATISTICS -->
+    <section class="section-padding-sm" style="background: var(--bg-surface); border-bottom: 1px solid var(--border-light);" id="why-choose-us">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Why Discerning Couples Choose Us</div>
+          <h2 class="section-title">The Standard in Haute Couture Stationery</h2>
+          <p class="section-subtitle">
+            Unrivaled tactile luxury, centuries-old printmaking heritage, and uncompromising bespoke attention.
+          </p>
+        </div>
+
+        <div class="grid-4" style="gap: 1.5rem; text-align: center;">
+          <div class="stat-card" style="flex-direction: column; text-align: center; padding: 2rem 1.5rem; justify-content: center;">
+            <div style="font-family: var(--font-serif); font-size: 3rem; color: var(--gold-primary); line-height: 1; font-weight: 600;">1,420+</div>
+            <h4 style="font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 0.25rem;">Suites Handcrafted</h4>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Preserved for heirloom luxury across 32 countries.</p>
+          </div>
+
+          <div class="stat-card" style="flex-direction: column; text-align: center; padding: 2rem 1.5rem; justify-content: center;">
+            <div style="font-family: var(--font-serif); font-size: 3rem; color: var(--gold-primary); line-height: 1; font-weight: 600;">18</div>
+            <h4 style="font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 0.25rem;">European Paper Mills</h4>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Exclusive relationships with Amalfi &amp; Fabriano mills.</p>
+          </div>
+
+          <div class="stat-card" style="flex-direction: column; text-align: center; padding: 2rem 1.5rem; justify-content: center;">
+            <div style="font-family: var(--font-serif); font-size: 3rem; color: var(--gold-primary); line-height: 1; font-weight: 600;">100%</div>
+            <h4 style="font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 0.25rem;">Tree-Free Cotton Rag</h4>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Eco-luxe sustainable botanical fibers.</p>
+          </div>
+
+          <div class="stat-card" style="flex-direction: column; text-align: center; padding: 2rem 1.5rem; justify-content: center;">
+            <div style="font-family: var(--font-serif); font-size: 3rem; color: var(--gold-primary); line-height: 1; font-weight: 600;">4.9★</div>
+            <h4 style="font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 0.25rem;">Client Satisfaction</h4>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Voted #1 luxury stationery atelier by wedding producers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4-STEP BESPOKE CRAFT PROCESS -->
+    <section class="section-padding" style="background: var(--bg-secondary); border-block: 1px solid var(--border-light);" id="our-process">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">The Atelier Journey</div>
+          <h2 class="section-title">How We Handcraft Your Wedding Stationery</h2>
+          <p class="section-subtitle">
+            A collaborative, personalized design experience ensuring flawless etiquette and sublime craftsmanship.
+          </p>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step-item">
+            <div class="process-num">01</div>
+            <h3 class="process-title">Design Consultation</h3>
+            <p class="process-desc">We discuss your wedding vision, color palettes, venue architecture, and paper stocks in a private showroom or video session.</p>
+          </div>
+
+          <div class="process-step-item">
+            <div class="process-num">02</div>
+            <h3 class="process-title">Curated Proofing</h3>
+            <p class="process-desc">Receive digital 3D mockups and typography layout proofs through our private Client Portal, with unlimited fine-tuning revisions.</p>
+          </div>
+
+          <div class="process-step-item">
+            <div class="process-num">03</div>
+            <h3 class="process-title">Artisan Printing</h3>
+            <p class="process-desc">Our master pressman engraves copper dies, hand-mixes inks, and presses each cotton sheet on vintage Heidelberg equipment.</p>
+          </div>
+
+          <div class="process-step-item">
+            <div class="process-num">04</div>
+            <h3 class="process-title">White-Glove Assembly</h3>
+            <p class="process-desc">Envelopes are hand-lined, silk ribbons tied, wax seals stamped, and suites packed in archival presentation keepsake boxes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section-padding" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Real Couples &amp; Planners</div>
+          <h2 class="section-title">Words from Our Cherished Brides &amp; Grooms</h2>
+        </div>
+
+        <div class="grid-3">
+          <!-- Review 1 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="quote-mark">“</div>
+              <p class="testimonial-text">
+                When our guests received their invitations, our phones didn't stop buzzing with compliments. The weight of the cotton paper and the rose gold foil stamping made them feel like royal decrees!
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <!-- Unique Reviewer Avatar 1 -->
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Elena Vance" class="testimonial-avatar">
+              <div>
+                <h4 class="author-name">Elena &amp; Julian Vance</h4>
+                <div class="author-detail">Lake Como Villa Wedding &bull; Milan, Italy</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="quote-mark">“</div>
+              <p class="testimonial-text">
+                The Custom Design Studio made visualizing our invitation suite effortless. The letterpress deboss was so deep you could trace every letter with your fingertips. Aura &amp; Vellum is in a class of its own.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <!-- Unique Reviewer Avatar 2 -->
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Camilla Rhodes" class="testimonial-avatar">
+              <div>
+                <h4 class="author-name">Camilla &amp; Marcus Rhodes</h4>
+                <div class="author-detail">The Plaza Grand Ballroom &bull; New York City</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="quote-mark">“</div>
+              <p class="testimonial-text">
+                As a wedding planner, I have worked with dozens of stationery houses, but the wax seal artistry, envelope liners, and on-time white-glove packaging from Aura &amp; Vellum are unmatched in the luxury bridal world.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <!-- Unique Reviewer Avatar 3 -->
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Sophia Al-Mansoor" class="testimonial-avatar">
+              <div>
+                <h4 class="author-name">Sophia Al-Mansoor</h4>
+                <div class="author-detail">Luxury Event Producer &bull; Dubai &amp; London</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INVITATION CONFIGURATOR CTA BANNER -->
+    <section class="section-padding-sm" style="background: var(--bg-dark-accent); color: #FFFFFF; position: relative;">
+      <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
+        <div>
+          <span style="color: var(--gold-primary); font-family: var(--font-display); font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase;">Interactive Atelier Tool</span>
+          <h2 style="color: #FFFFFF; font-size: clamp(1.8rem, 3vw, 2.4rem); margin-top: 0.5rem; margin-bottom: 0.5rem;">
+            Ready to Build &amp; Price Your Bespoke Suite?
+          </h2>
+          <p style="color: #C8C2BA; max-width: 580px; margin: 0;">
+            Use our live custom configurator to select card formats, handmade cotton stocks, gold foil finishes, and wax seals with instant price estimation.
+          </p>
+        </div>
+        <div>
+          <a href="custom-design.html" class="btn btn-primary btn-lg">Launch Custom Studio &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST JOURNAL ARTICLES -->
+    <section class="section-padding" id="latest-journal">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">The Wedding Journal</div>
+          <h2 class="section-title">Artisan Insights &amp; Etiquette Guides</h2>
+          <p class="section-subtitle">
+            Tips on invitation wording, paper weights, timeline scheduling, and calligraphy preservation.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Article 1 -->
+          <article class="luxury-card blog-card-item" data-category="artisan-craft">
+            <a href="blog-details.html?id=art-wax-seals" class="card-img-wrap" aria-label="Read The Art of Wax Seals & Deckle Edges">
+              <!-- Unique Blog 1 Image: Wax seals and deckle paper -->
+              <img src="images/blog-wax-seals.jpg" alt="Artisanal sealing wax stick, melting spoon, and stamped wax seals on deckle paper">
+              <span class="card-badge-floating">Artisan Craft</span>
+            </a>
+            <div class="card-body">
+              <span class="card-eyebrow">Studio Secrets &bull; By Genevieve</span>
+              <h3 class="card-title"><a href="blog-details.html?id=art-wax-seals">The Art of Wax Seals &amp; Deckle Edges</a></h3>
+              <p class="card-desc">Why hand-poured molten wax and feathery water-torn deckle paper evoke unforgettable nostalgic romance for guests.</p>
+              <div class="card-footer">
+                <span style="font-size: 0.82rem; color: var(--text-muted);">Sep 18, 2026 &bull; 5 min read</span>
+                <a href="blog-details.html?id=art-wax-seals" class="btn-link-luxury">Read &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="luxury-card blog-card-item" data-category="etiquette">
+            <a href="blog-details.html?id=mail-save-the-dates" class="card-img-wrap" aria-label="Read When to Mail Save the Dates & Invites">
+              <!-- Unique Blog 2 Image: Envelope addressing handbook -->
+              <img src="images/blog-save-dates.jpg" alt="Hand addressed calligraphy envelopes and vintage postage stamp collection">
+              <span class="card-badge-floating">Wedding Etiquette</span>
+            </a>
+            <div class="card-body">
+              <span class="card-eyebrow">Wedding Protocol &bull; By Alistair</span>
+              <h3 class="card-title"><a href="blog-details.html?id=mail-save-the-dates">When to Mail Save the Dates &amp; Invites</a></h3>
+              <p class="card-desc">Navigate the exact timeline for domestic vs destination celebrations to ensure prompt RSVPs and proper honorific addressing.</p>
+              <div class="card-footer">
+                <span style="font-size: 0.82rem; color: var(--text-muted);">Sep 04, 2026 &bull; 7 min read</span>
+                <a href="blog-details.html?id=mail-save-the-dates" class="btn-link-luxury">Read &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="luxury-card blog-card-item" data-category="paper-guide">
+            <a href="blog-details.html?id=paper-weights-decoded" class="card-img-wrap" aria-label="Read Paper Weights Decoded">
+              <!-- Unique Blog 3 Image: Stack of heavy 600gsm duplex paper swatches -->
+              <img src="images/blog-paper-weights.jpg" alt="Artisan paper swatches and heavy tactile cotton paper weights comparison 300gsm, 600gsm, 900gsm">
+              <span class="card-badge-floating">Paper Science</span>
+            </a>
+            <div class="card-body">
+              <span class="card-eyebrow">Materials &bull; By Mateo Rossi</span>
+              <h3 class="card-title"><a href="blog-details.html?id=paper-weights-decoded">Paper Weights Decoded: 600gsm Cotton</a></h3>
+              <p class="card-desc">Explore why ultra-thick duplexed cotton board produces deep letterpress debossing without warping in postal transit.</p>
+              <div class="card-footer">
+                <span style="font-size: 0.82rem; color: var(--text-muted);">Aug 26, 2026 &bull; 4 min read</span>
+                <a href="blog-details.html?id=paper-weights-decoded" class="btn-link-luxury">Read &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSULTATION & CALL TO ACTION -->
+    <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color);" id="consultation-cta">
+      <div class="container" style="max-width: 860px; text-align: center;">
+        <div class="section-eyebrow">Private Atelier Appointments</div>
+        <h2 class="section-title">Schedule Your Private Wedding Design Consultation</h2>
+        <p class="lead" style="margin-bottom: 2rem;">
+          Join us in our Manhattan showroom or schedule a virtual white-glove design session. We will guide you through paper samples, foil swatches, and custom monogram sketches.
+        </p>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary btn-lg">Book Studio Consultation</a>
+          <a href="pricing.html" class="btn btn-secondary btn-lg">Order Wedding Sample Kit ($35)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div>
+          <a href="index.html" class="nav-logo" style="margin-bottom: 1rem;">
+            <div class="nav-logo-mark">AV</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-brand">AURA &amp; VELLUM</span>
+              <span class="nav-logo-sub">Haute Couture Stationery</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            An artisanal letterpress and bespoke wedding stationery atelier dedicated to celebrating extraordinary love stories with heirloom-quality cotton paper, hot foil stamping, and calligraphy.
+          </p>
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="#" class="btn-icon" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" x2="12" y1="8" y2="16"/><line x1="8" x2="16" y1="12" y2="12"/></svg>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-title">Explore Atelier</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home One — Signature Suites</a></li>
+            <li><a href="home-2.html" class="footer-link">Home Two — Letterpress Studio</a></li>
+            <li><a href="about.html" class="footer-link">Our Heritage &amp; Artisans</a></li>
+            <li><a href="products.html" class="footer-link">Invitation Collections</a></li>
+            <li><a href="custom-design.html" class="footer-link">Custom Design Builder</a></li>
+            <li><a href="pricing.html" class="footer-link">Investment &amp; Packages</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services & Details -->
+        <div>
+          <h4 class="footer-title">Craftsmanship</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Bespoke Wedding Suites</a></li>
+            <li><a href="service-details.html" class="footer-link">Hot Foil &amp; Letterpress</a></li>
+            <li><a href="printing-delivery.html" class="footer-link">Paper Weights &amp; Foils</a></li>
+            <li><a href="printing-delivery.html" class="footer-link">Worldwide Delivery Guide</a></li>
+            <li><a href="dashboard.html" class="footer-link">Client Proofing Portal</a></li>
+            <li><a href="blog.html" class="footer-link">Etiquette &amp; Journal</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter & Showroom Contact -->
+        <div>
+          <h4 class="footer-title">Join The Atelier Circle</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Subscribe to receive private preview invitations to seasonal collection launches and bridal styling guides.
+          </p>
+          <form onsubmit="event.preventDefault(); window.showToast('Thank you for subscribing to Aura &amp; Vellum!', 'success');" style="display: flex; gap: 0.5rem; margin-bottom: 1.25rem;">
+            <input type="email" required placeholder="Enter your email address" class="form-control" style="font-size: 0.88rem; padding: 0.6rem 1rem;">
+            <button type="submit" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Join</button>
+          </form>
+          <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+            <div><strong>Flagship Atelier:</strong> 482 Broome Street, SoHo, NY 10013</div>
+            <div><strong>Inquiries:</strong> concierge@auravellum.com &bull; +1 (212) 555-0198</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Aura &amp; Vellum Haute Couture Stationery Atelier. All Rights Reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#privacy" data-open-sheet="privacy" class="footer-link">Privacy Policy</a>
+          <a href="#terms" data-open-sheet="terms" class="footer-link">Terms of Commission</a>
+          <a href="#launches" data-open-sheet="launches" class="footer-link">Seasonal Launch</a>
+          <a href="#showroom" data-open-sheet="showroom" class="footer-link">Showroom Hours</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLOBAL LOGIN MODAL -->
+  <div class="modal-overlay" id="global-login-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+    <div class="modal-container" style="max-width: 460px;">
+      <button type="button" class="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 1.75rem;">
+        <div class="section-eyebrow no-decor">Client Portal</div>
+        <h3 id="login-modal-title" style="font-size: 1.8rem; margin-bottom: 0.35rem;">Sign In to Atelier</h3>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">Access your digital proofs, revisions, and order tracking.</p>
+      </div>
+
+      <!-- Tab Switcher -->
+      <div style="display: flex; border-bottom: 1px solid var(--border-light); margin-bottom: 1.5rem;">
+        <button type="button" id="modal-tab-login" onclick="document.getElementById('modal-form-login').style.display='block'; document.getElementById('modal-form-register').style.display='none'; this.style.borderBottom='2px solid var(--gold-primary)'; this.style.color='var(--gold-primary)'; document.getElementById('modal-tab-reg').style.borderBottom='none'; document.getElementById('modal-tab-reg').style.color='var(--text-secondary)';" style="flex: 1; padding: 0.6rem; background: none; border: none; border-bottom: 2px solid var(--gold-primary); color: var(--gold-primary); font-weight: 600; cursor: pointer; font-size: 0.9rem;">
+          Sign In
+        </button>
+        <button type="button" id="modal-tab-reg" onclick="document.getElementById('modal-form-login').style.display='none'; document.getElementById('modal-form-register').style.display='block'; this.style.borderBottom='2px solid var(--gold-primary)'; this.style.color='var(--gold-primary)'; document.getElementById('modal-tab-login').style.borderBottom='none'; document.getElementById('modal-tab-login').style.color='var(--text-secondary)';" style="flex: 1; padding: 0.6rem; background: none; border: none; color: var(--text-secondary); font-weight: 600; cursor: pointer; font-size: 0.9rem;">
+          Register
+        </button>
+      </div>
+
+      <!-- Sign In Form -->
+      <form id="modal-form-login" onsubmit="event.preventDefault(); window.showToast('Signing in... Redirecting to dashboard', 'success'); setTimeout(() => window.location.href='dashboard.html', 800);">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modal-login-email" style="font-size: 0.82rem;">Email / Username *</label>
+          <input type="email" id="modal-login-email" required class="form-control" placeholder="name@domain.com" value="concierge@auravellum.com" style="padding: 0.65rem 0.95rem;">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+            <label class="form-label" for="modal-login-password" style="font-size: 0.82rem; margin: 0;">Password *</label>
+            <a href="#" onclick="event.preventDefault(); window.showToast('Reset link dispatched to your email.', 'info');" style="font-size: 0.78rem; color: var(--gold-primary);">Forgot?</a>
+          </div>
+          <div style="position: relative;">
+            <input type="password" id="modal-login-password" required class="form-control" placeholder="••••••••" value="Heirloom2026!" style="padding: 0.65rem 0.95rem;">
+            <button type="button" class="password-toggle-btn" data-target="modal-login-password" style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 0.78rem; color: var(--gold-primary); cursor: pointer;">
+              Show
+            </button>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+          <label style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: var(--text-secondary); cursor: pointer;">
+            <input type="checkbox" checked style="accent-color: var(--gold-primary);">
+            Remember me
+          </label>
+          <a href="dashboard.html" style="font-size: 0.82rem; color: var(--gold-primary); font-weight: 600;">Admin View &rarr;</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem;">
+          Sign In to Portal &rarr;
+        </button>
+      </form>
+
+      <!-- Register Form -->
+      <form id="modal-form-register" style="display: none;" onsubmit="event.preventDefault(); window.showToast('Registration submitted! Confirmation email sent.', 'success'); window.closeModal('global-login-modal');">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modal-reg-name" style="font-size: 0.82rem;">Couple Names *</label>
+          <input type="text" id="modal-reg-name" required class="form-control" placeholder="e.g. Elena &amp; Julian" style="padding: 0.65rem 0.95rem;">
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modal-reg-email" style="font-size: 0.82rem;">Email *</label>
+          <input type="email" id="modal-reg-email" required class="form-control" placeholder="name@domain.com" style="padding: 0.65rem 0.95rem;">
+        </div>
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label class="form-label" for="modal-reg-password" style="font-size: 0.82rem;">Create Password *</label>
+          <input type="password" id="modal-reg-password" required class="form-control" placeholder="Min. 8 characters" style="padding: 0.65rem 0.95rem;">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem;">
+          Create Account &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

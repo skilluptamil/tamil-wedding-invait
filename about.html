@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Our Atelier &amp; Master Artisans — Aura &amp; Vellum</title>
+  <meta name="description" content="Discover the story, master letterpress printers, and cotton paper mill heritage behind Aura & Vellum Haute Couture Wedding Stationery.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+</head>
+<body>
+
+  <!-- Luxury Sticky Navbar -->
+  <header class="navbar" id="main-nav">
+    <div class="container-wide nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Aura and Vellum Home">
+        <div class="nav-logo-mark">AV</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-brand">AURA &amp; VELLUM</span>
+          <span class="nav-logo-sub">Haute Couture Stationery</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu (Strictly 5 Navigation Items) -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <div class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link" aria-haspopup="true">
+            Home
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="nav-dropdown">
+            <a href="index.html" class="dropdown-link">Home One</a>
+            <a href="home-2.html" class="dropdown-link">Home Two</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link active">About Us</a>
+        </div>
+        <div class="nav-item">
+          <a href="services.html" class="nav-link">Services</a>
+        </div>
+        <div class="nav-item">
+          <a href="blog.html" class="nav-link">Blog</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </div>
+      </nav>
+
+      <!-- Right Nav Controls (LTR/RTL, Dark/Light, Login) -->
+      <div class="nav-actions">
+        <!-- LTR / RTL Direction Toggle -->
+        <button type="button" class="control-pill-btn lang-toggle-btn" aria-label="Toggle language direction">
+          <span class="dir-label" style="font-weight: 700; font-size: 0.75rem;">RTL</span>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button type="button" class="control-pill-btn theme-toggle-btn" aria-label="Toggle theme">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+
+        <!-- Login Button -->
+        <a href="login.html" class="btn btn-primary btn-sm nav-login-btn" style="padding: 0.48rem 1.25rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Login
+        </a>
+
+        <button type="button" class="hamburger-btn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu (Strictly 5 items + Login) -->
+  <div class="mobile-nav-drawer" id="mobile-menu">
+    <div class="mobile-nav-links">
+      <div style="border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem;">
+        <a href="#" class="mobile-nav-link mobile-dropdown-toggle" style="display: flex; justify-content: space-between; align-items: center; border-bottom: none;">
+          <span>Home</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform var(--transition-normal);"><path d="m6 9 6 6 6-6"/></svg>
+        </a>
+        <div class="mobile-dropdown-content" style="display: none; padding-inline-start: 1.25rem; margin-top: 0.5rem;">
+          <a href="index.html" class="dropdown-link" style="display: block; padding: 0.4rem 0;">Home One</a>
+          <a href="home-2.html" class="dropdown-link" style="display: block; padding: 0.4rem 0;">Home Two</a>
+        </div>
+      </div>
+      <a href="about.html" class="mobile-nav-link active">About Us</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="blog.html" class="mobile-nav-link">Blog</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
+      <a href="login.html" class="btn btn-primary nav-login-btn" style="width: 100%;">Login to Portal</a>
+      <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Book Consultation</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="section-padding-sm" style="background: var(--bg-secondary); border-bottom: 1px solid var(--border-color); text-align: center;">
+      <div class="container" style="max-width: 780px;">
+        <div class="section-eyebrow">Our Story &amp; Heritage</div>
+        <h1 style="font-size: clamp(2.4rem, 4.5vw, 3.8rem); margin-bottom: 1.25rem;">Preserving the Sacred Art of Slow Stationery</h1>
+        <p class="lead">
+          Founded on the conviction that a wedding invitation is not merely paper, but the first physical portal into the sacred atmosphere of your union.
+        </p>
+      </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="grid-2" style="align-items: center; gap: 4rem;">
+          <div>
+            <div class="section-eyebrow no-decor">Artisanal Philosophy</div>
+            <h2 class="section-title">An Atelier Born From Passion for Tactile Beauty</h2>
+            <p class="lead" style="color: var(--text-primary); margin-bottom: 1.25rem;">
+              In a digital world dominated by fleeting text messages, we celebrate paper that carries gravity, depth, and permanence.
+            </p>
+            <p style="margin-bottom: 1.25rem;">
+              Every envelope folded at Aura &amp; Vellum is crafted from sustainable 100% recycled cotton remnants from the textile trade. No virgin trees are felled; instead, we partner with heritage Italian and French paper mills that have pulverized cotton into velvety, feather-edged sheets since the 18th century.
+            </p>
+            <p style="margin-bottom: 2rem;">
+              Our printing is entirely mechanical and artisanal. When an engraved brass die presses into cotton rag with 4,000 pounds of pressure, the indentation becomes permanent, casting microscopic shadows that invite touch.
+            </p>
+            <div style="display: flex; gap: 2rem;">
+              <div>
+                <h4 style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--gold-primary); margin-bottom: 0.25rem;">100% Tree-Free</h4>
+                <p style="font-size: 0.85rem; margin: 0;">Sustainable pure cotton rag pulp.</p>
+              </div>
+              <div>
+                <h4 style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--gold-primary); margin-bottom: 0.25rem;">Hand-Poured</h4>
+                <p style="font-size: 0.85rem; margin: 0;">Resin wax seals and silk ribbon dyes.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <!-- Unique Studio Workshop Image -->
+            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80" alt="Aura and Vellum studio workshop with paper rolls, letterpress trays, and ink pigments" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); border: 1px solid var(--border-color); aspect-ratio: 4/3; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATELIER MILESTONES TIMELINE -->
+    <section class="section-padding" style="background: var(--bg-secondary); border-block: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Our Milestones</div>
+          <h2 class="section-title">Two Decades of Devotion to the Craft</h2>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step-item">
+            <div class="process-num">2008</div>
+            <h3 class="process-title">The First Press</h3>
+            <p class="process-desc">Founder Genevieve Beauchamp rescues and restores a 1904 Heidelberg platen press from a defunct Florentine bookbinder.</p>
+          </div>
+
+          <div class="process-step-item">
+            <div class="process-num">2014</div>
+            <h3 class="process-title">Deckle Edge Mill Alliance</h3>
+            <p class="process-desc">We establish an exclusive partnership with an Amalfi Coast watermill to produce custom-watermarked 600gsm cotton boards.</p>
+          </div>
+
+          <div class="process-step-item">
+            <div class="process-num">2019</div>
+            <h3 class="process-title">SoHo Flagship Lounge</h3>
+            <p class="process-desc">Opening of our private client consultation salon on Broome Street in Manhattan, hosting couples from over 32 countries.</p>
+          </div>
+
+          <div class="process-step-item">
+            <div class="process-num">2026</div>
+            <h3 class="process-title">Interactive Digital Atelier</h3>
+            <p class="process-desc">Launch of our interactive 3D suite customizer and digital client proofing portal, bringing bespoke couture to brides globally.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTER ARTISANS TEAM -->
+    <section class="section-padding" id="our-team">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">The Atelier Guild</div>
+          <h2 class="section-title">The Artisans Behind Your Stationery</h2>
+          <p class="section-subtitle">
+            Calligraphers, master typographers, and paper guild masters who pour their soul into every impression.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <!-- Artisan 1 -->
+          <div class="luxury-card" style="text-align: center; padding: 2rem 1.5rem;">
+            <div style="width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 1.25rem; overflow: hidden; border: 2px solid var(--gold-primary);">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Genevieve Beauchamp" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.25rem;">Genevieve Beauchamp</h3>
+            <p style="color: var(--gold-primary); font-size: 0.82rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.75rem;">Founder &amp; Master Calligrapher</p>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">Florentine-trained calligrapher specializing in Copperplate, Spencerian, and bespoke family crests.</p>
+          </div>
+
+          <!-- Artisan 2 -->
+          <div class="luxury-card" style="text-align: center; padding: 2rem 1.5rem;">
+            <div style="width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 1.25rem; overflow: hidden; border: 2px solid var(--gold-primary);">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Alistair Thorne" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.25rem;">Alistair Thorne</h3>
+            <p style="color: var(--gold-primary); font-size: 0.82rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.75rem;">Head Letterpress Printmaker</p>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">30 years mastering antique platen and cylinder presses, copper dies, and hand-mixed oil pigments.</p>
+          </div>
+
+          <!-- Artisan 3 -->
+          <div class="luxury-card" style="text-align: center; padding: 2rem 1.5rem;">
+            <div style="width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 1.25rem; overflow: hidden; border: 2px solid var(--gold-primary);">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80" alt="Seraphina Dubois" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.25rem;">Seraphina Dubois</h3>
+            <p style="color: var(--gold-primary); font-size: 0.82rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.75rem;">Master Foil Gilder &amp; Chemist</p>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">Expert in micro-temperature hot foil stamping, beveled edge painting, and flexible resin wax formulations.</p>
+          </div>
+
+          <!-- Artisan 4 -->
+          <div class="luxury-card" style="text-align: center; padding: 2rem 1.5rem;">
+            <div style="width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 1.25rem; overflow: hidden; border: 2px solid var(--gold-primary);">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Mateo Rossi" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.25rem;">Mateo Rossi</h3>
+            <p style="color: var(--gold-primary); font-size: 0.82rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.75rem;">Deckle Edge &amp; Paper Master</p>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">Curator of our archival paper library, inspecting every batch of Amalfi cotton and handmade botanical sheets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM COLLABORATION FEATURE IMAGE -->
+    <section class="section-padding-sm" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="grid-2" style="align-items: center; gap: 3rem;">
+          <div>
+            <!-- Bespoke Image: Luxury Stationery Design Concierge Consultation -->
+            <img src="images/design-concierge.jpg" alt="Aura & Vellum private design concierge consultation with couple reviewing custom wedding invitation suite" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--border-color); aspect-ratio: 4/3; object-fit: cover;">
+          </div>
+          <div>
+            <div class="section-eyebrow no-decor">White-Glove Service</div>
+            <h2 class="section-title">Dedicated Design Concierge for Every Couple</h2>
+            <p class="lead" style="margin-bottom: 1.25rem;">
+              You are never a simple order number at Aura &amp; Vellum. From the moment you contact us, you are paired with a dedicated designer who handles your typography, etiquette inquiries, and assembly.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="contact.html" class="btn btn-primary">Schedule Consultation</a>
+              <a href="custom-design.html" class="btn btn-secondary">Try Suite Configurator</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div>
+          <a href="index.html" class="nav-logo" style="margin-bottom: 1rem;">
+            <div class="nav-logo-mark">AV</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-brand">AURA &amp; VELLUM</span>
+              <span class="nav-logo-sub">Haute Couture Stationery</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            An artisanal letterpress and bespoke wedding stationery atelier dedicated to celebrating extraordinary love stories with heirloom-quality cotton paper, hot foil stamping, and calligraphy.
+          </p>
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="#" class="btn-icon" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" x2="12" y1="8" y2="16"/><line x1="8" x2="16" y1="12" y2="12"/></svg>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-title">Explore Atelier</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home One — Signature Suites</a></li>
+            <li><a href="home-2.html" class="footer-link">Home Two — Letterpress Studio</a></li>
+            <li><a href="about.html" class="footer-link">Our Heritage &amp; Artisans</a></li>
+            <li><a href="products.html" class="footer-link">Invitation Collections</a></li>
+            <li><a href="custom-design.html" class="footer-link">Custom Design Builder</a></li>
+            <li><a href="pricing.html" class="footer-link">Investment &amp; Packages</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services & Details -->
+        <div>
+          <h4 class="footer-title">Craftsmanship</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Bespoke Wedding Suites</a></li>
+            <li><a href="service-details.html" class="footer-link">Hot Foil &amp; Letterpress</a></li>
+            <li><a href="printing-delivery.html" class="footer-link">Paper Weights &amp; Foils</a></li>
+            <li><a href="printing-delivery.html" class="footer-link">Worldwide Delivery Guide</a></li>
+            <li><a href="dashboard.html" class="footer-link">Client Proofing Portal</a></li>
+            <li><a href="blog.html" class="footer-link">Etiquette &amp; Journal</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter & Showroom Contact -->
+        <div>
+          <h4 class="footer-title">Join The Atelier Circle</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Subscribe to receive private preview invitations to seasonal collection launches and bridal styling guides.
+          </p>
+          <form onsubmit="event.preventDefault(); window.showToast('Thank you for subscribing to Aura &amp; Vellum!', 'success');" style="display: flex; gap: 0.5rem; margin-bottom: 1.25rem;">
+            <input type="email" required placeholder="Enter your email address" class="form-control" style="font-size: 0.88rem; padding: 0.6rem 1rem;">
+            <button type="submit" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Join</button>
+          </form>
+          <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+            <div><strong>Flagship Atelier:</strong> 482 Broome Street, SoHo, NY 10013</div>
+            <div><strong>Inquiries:</strong> concierge@auravellum.com &bull; +1 (212) 555-0198</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Aura &amp; Vellum Haute Couture Stationery Atelier. All Rights Reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#privacy" data-open-sheet="privacy" class="footer-link">Privacy Policy</a>
+          <a href="#terms" data-open-sheet="terms" class="footer-link">Terms of Commission</a>
+          <a href="#launches" data-open-sheet="launches" class="footer-link">Seasonal Launch</a>
+          <a href="#showroom" data-open-sheet="showroom" class="footer-link">Showroom Hours</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLOBAL LOGIN MODAL -->
+  <div class="modal-overlay" id="global-login-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+    <div class="modal-container" style="max-width: 460px;">
+      <button type="button" class="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 1.75rem;">
+        <div class="section-eyebrow no-decor">Client Portal</div>
+        <h3 id="login-modal-title" style="font-size: 1.8rem; margin-bottom: 0.35rem;">Sign In to Atelier</h3>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">Access your digital proofs, revisions, and order tracking.</p>
+      </div>
+
+      <!-- Tab Switcher -->
+      <div style="display: flex; border-bottom: 1px solid var(--border-light); margin-bottom: 1.5rem;">
+        <button type="button" id="modal-tab-login" onclick="document.getElementById('modal-form-login').style.display='block'; document.getElementById('modal-form-register').style.display='none'; this.style.borderBottom='2px solid var(--gold-primary)'; this.style.color='var(--gold-primary)'; document.getElementById('modal-tab-reg').style.borderBottom='none'; document.getElementById('modal-tab-reg').style.color='var(--text-secondary)';" style="flex: 1; padding: 0.6rem; background: none; border: none; border-bottom: 2px solid var(--gold-primary); color: var(--gold-primary); font-weight: 600; cursor: pointer; font-size: 0.9rem;">
+          Sign In
+        </button>
+        <button type="button" id="modal-tab-reg" onclick="document.getElementById('modal-form-login').style.display='none'; document.getElementById('modal-form-register').style.display='block'; this.style.borderBottom='2px solid var(--gold-primary)'; this.style.color='var(--gold-primary)'; document.getElementById('modal-tab-login').style.borderBottom='none'; document.getElementById('modal-tab-login').style.color='var(--text-secondary)';" style="flex: 1; padding: 0.6rem; background: none; border: none; color: var(--text-secondary); font-weight: 600; cursor: pointer; font-size: 0.9rem;">
+          Register
+        </button>
+      </div>
+
+      <!-- Sign In Form -->
+      <form id="modal-form-login" onsubmit="event.preventDefault(); window.showToast('Signing in... Redirecting to dashboard', 'success'); setTimeout(() => window.location.href='dashboard.html', 800);">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modal-login-email" style="font-size: 0.82rem;">Email / Username *</label>
+          <input type="email" id="modal-login-email" required class="form-control" placeholder="name@domain.com" value="concierge@auravellum.com" style="padding: 0.65rem 0.95rem;">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+            <label class="form-label" for="modal-login-password" style="font-size: 0.82rem; margin: 0;">Password *</label>
+            <a href="#" onclick="event.preventDefault(); window.showToast('Reset link dispatched to your email.', 'info');" style="font-size: 0.78rem; color: var(--gold-primary);">Forgot?</a>
+          </div>
+          <div style="position: relative;">
+            <input type="password" id="modal-login-password" required class="form-control" placeholder="••••••••" value="Heirloom2026!" style="padding: 0.65rem 0.95rem;">
+            <button type="button" class="password-toggle-btn" data-target="modal-login-password" style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 0.78rem; color: var(--gold-primary); cursor: pointer;">
+              Show
+            </button>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+          <label style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: var(--text-secondary); cursor: pointer;">
+            <input type="checkbox" checked style="accent-color: var(--gold-primary);">
+            Remember me
+          </label>
+          <a href="dashboard.html" style="font-size: 0.82rem; color: var(--gold-primary); font-weight: 600;">Admin View &rarr;</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem;">
+          Sign In to Portal &rarr;
+        </button>
+      </form>
+
+      <!-- Register Form -->
+      <form id="modal-form-register" style="display: none;" onsubmit="event.preventDefault(); window.showToast('Registration submitted! Confirmation email sent.', 'success'); window.closeModal('global-login-modal');">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modal-reg-name" style="font-size: 0.82rem;">Couple Names *</label>
+          <input type="text" id="modal-reg-name" required class="form-control" placeholder="e.g. Elena &amp; Julian" style="padding: 0.65rem 0.95rem;">
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modal-reg-email" style="font-size: 0.82rem;">Email *</label>
+          <input type="email" id="modal-reg-email" required class="form-control" placeholder="name@domain.com" style="padding: 0.65rem 0.95rem;">
+        </div>
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label class="form-label" for="modal-reg-password" style="font-size: 0.82rem;">Create Password *</label>
+          <input type="password" id="modal-reg-password" required class="form-control" placeholder="Min. 8 characters" style="padding: 0.65rem 0.95rem;">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem;">
+          Create Account &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
