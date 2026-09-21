@@ -148,7 +148,7 @@
       submitBtn.addEventListener('click', (e) => {
         e.preventDefault();
         const quoteModal = document.getElementById('quote-summary-modal');
-        if (quoteModal) {
+        if (quoteModal && window.openModal) {
           window.openModal('quote-summary-modal');
         } else if (window.showToast) {
           window.showToast('Your custom suite configuration has been drafted! Check your email for consultation booking.', 'success');
@@ -156,8 +156,158 @@
       });
     }
 
+    // Initialize Quote Modal Form Validation
+    initQuoteModalForm();
+
     // Initial state calculation
     updatePricing();
+  }
+
+  function initQuoteModalForm() {
+    const form = document.getElementById('quote-modal-form');
+    if (!form) return;
+
+    const namesInput = document.getElementById('quote-names');
+    const emailInput = document.getElementById('quote-email');
+    const phoneInput = document.getElementById('quote-phone');
+    const dateInput = document.getElementById('quote-date');
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+    function showFieldError(field, errorId, message) {
+      if (!field) return;
+      field.classList.add('is-invalid');
+      const errEl = document.getElementById(errorId);
+      if (errEl) {
+        if (message) errEl.textContent = message;
+        errEl.classList.add('is-visible');
+      }
+    }
+
+    function clearFieldError(field, errorId) {
+      if (!field) return;
+      field.classList.remove('is-invalid');
+      const errEl = document.getElementById(errorId);
+      if (errEl) {
+        errEl.classList.remove('is-visible');
+      }
+    }
+
+    // Phone input strict numeric filtering: allow digits only (and optional leading +)
+    if (phoneInput) {
+      phoneInput.addEventListener('input', () => {
+        const rawVal = phoneInput.value;
+        const hasPlus = rawVal.startsWith('+');
+        const digits = rawVal.replace(/\D/g, '');
+        phoneInput.value = (hasPlus ? '+' : '') + digits;
+
+        if (digits.length >= 7 && digits.length <= 15) {
+          clearFieldError(phoneInput, 'err-quote-phone');
+        }
+      });
+
+      phoneInput.addEventListener('keydown', (e) => {
+        // Allow backspace, delete, tab, escape, enter, arrows
+        if (['Backspace', 'Delete', 'Tab', 'Escape', 'Enter', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(e.key)) {
+          return;
+        }
+        // Allow ctrl/cmd combinations
+        if (e.ctrlKey || e.metaKey) {
+          return;
+        }
+        // Allow '+' only as the first character
+        if (e.key === '+' && phoneInput.value.length === 0) {
+          return;
+        }
+        // Reject non-digits
+        if (!/^[0-9]$/.test(e.key)) {
+          e.preventDefault();
+        }
+      });
+    }
+
+    // Clear errors on input/change
+    if (namesInput) {
+      namesInput.addEventListener('input', () => {
+        if (namesInput.value.trim().length > 0) clearFieldError(namesInput, 'err-quote-names');
+      });
+    }
+    if (emailInput) {
+      emailInput.addEventListener('input', () => {
+        if (emailPattern.test(emailInput.value.trim())) clearFieldError(emailInput, 'err-quote-email');
+      });
+    }
+    if (dateInput) {
+      dateInput.addEventListener('change', () => {
+        if (dateInput.value.trim().length > 0) clearFieldError(dateInput, 'err-quote-date');
+      });
+    }
+
+    // Submit handler with strict validation
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let hasErrors = false;
+      let firstInvalid = null;
+
+      // Validate Names
+      if (!namesInput || !namesInput.value.trim()) {
+        showFieldError(namesInput, 'err-quote-names', "Please enter the couple's names.");
+        if (!firstInvalid) firstInvalid = namesInput;
+        hasErrors = true;
+      } else {
+        clearFieldError(namesInput, 'err-quote-names');
+      }
+
+      // Validate Email
+      if (!emailInput || !emailInput.value.trim()) {
+        showFieldError(emailInput, 'err-quote-email', 'Please enter your email address.');
+        if (!firstInvalid) firstInvalid = emailInput;
+        hasErrors = true;
+      } else if (!emailPattern.test(emailInput.value.trim())) {
+        showFieldError(emailInput, 'err-quote-email', 'Please enter a valid email address (e.g. name@domain.com).');
+        if (!firstInvalid) firstInvalid = emailInput;
+        hasErrors = true;
+      } else {
+        clearFieldError(emailInput, 'err-quote-email');
+      }
+
+      // Validate Phone: reject empty, letters/spaces, or length outside 7-15 digits
+      const digitsOnly = phoneInput ? phoneInput.value.replace(/\D/g, '') : '';
+      if (!phoneInput || !phoneInput.value.trim()) {
+        showFieldError(phoneInput, 'err-quote-phone', 'Please enter your contact phone / WhatsApp number.');
+        if (!firstInvalid) firstInvalid = phoneInput;
+        hasErrors = true;
+      } else if (digitsOnly.length < 7 || digitsOnly.length > 15) {
+        showFieldError(phoneInput, 'err-quote-phone', 'Please enter a valid numeric phone number (7 to 15 digits).');
+        if (!firstInvalid) firstInvalid = phoneInput;
+        hasErrors = true;
+      } else {
+        clearFieldError(phoneInput, 'err-quote-phone');
+      }
+
+      // Validate Date
+      if (!dateInput || !dateInput.value.trim()) {
+        showFieldError(dateInput, 'err-quote-date', 'Please select your wedding date.');
+        if (!firstInvalid) firstInvalid = dateInput;
+        hasErrors = true;
+      } else {
+        clearFieldError(dateInput, 'err-quote-date');
+      }
+
+      if (hasErrors) {
+        if (firstInvalid && firstInvalid.focus) firstInvalid.focus();
+        return;
+      }
+
+      // Submission Success
+      form.reset();
+      if (window.closeModal) {
+        window.closeModal('quote-summary-modal');
+      }
+      if (window.showToast) {
+        window.showToast('Configuration submitted! We will email your formal proposal within 12 hours.', 'success');
+      }
+    });
   }
 
   function updateOptionCardStyles(elements) {
