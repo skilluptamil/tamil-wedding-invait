@@ -7,6 +7,7 @@
 
 /* --- CSS Variables & Design Tokens --- */
 :root {
+  color-scheme: light;
   /* Light Theme (Default: Soft Alabaster & Warm Champagne Gold) */
   --bg-primary: #FCFBF9;
   --bg-secondary: #F6F3EE;
@@ -62,6 +63,7 @@
 
 /* Dark Theme (Velvety Charcoal Obsidian & Warm Gilded Accents) */
 [data-theme="dark"] {
+  color-scheme: dark;
   --bg-primary: #100F0E;
   --bg-secondary: #171614;
   --bg-surface: #1E1C1A;
@@ -2552,6 +2554,84 @@ button, input, select, textarea {
   outline: none;
   border-color: var(--gold-primary);
   box-shadow: 0 0 0 3px var(--gold-glow);
+}
+
+/* --- Date Inputs & Calendar Picker Styling --- */
+input[type="date"].form-control,
+input[type="date"].portal-text-input {
+  position: relative;
+  font-family: inherit;
+  cursor: text;
+}
+
+/* Base Light Mode Calendar Indicator */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.65;
+  padding: 0.2rem;
+  margin-inline-start: 0.5rem;
+  border-radius: var(--radius-xs);
+  transition: opacity var(--transition-fast), filter var(--transition-fast), transform var(--transition-fast);
+  vertical-align: middle;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+/* Date Field Segment Colors (Day / Month / Year) */
+input[type="date"]::-webkit-datetime-edit {
+  color: var(--text-primary);
+}
+
+input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+input[type="date"]::-webkit-datetime-edit-text {
+  color: var(--text-muted);
+  padding: 0 0.15rem;
+}
+
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+  color: var(--text-primary);
+  padding: 0 0.1rem;
+  border-radius: 2px;
+}
+
+input[type="date"]::-webkit-datetime-edit-month-field:focus,
+input[type="date"]::-webkit-datetime-edit-day-field:focus,
+input[type="date"]::-webkit-datetime-edit-year-field:focus {
+  background-color: var(--gold-light);
+  color: var(--gold-primary);
+  outline: none;
+}
+
+/* --- Dark Mode Date Input & Calendar Icon --- */
+[data-theme="dark"] input[type="date"],
+[data-theme="dark"] .form-control[type="date"],
+[data-theme="dark"] .portal-text-input[type="date"] {
+  color-scheme: dark;
+}
+
+[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator,
+[data-theme="dark"] .form-control[type="date"]::-webkit-calendar-picker-indicator,
+[data-theme="dark"] .portal-text-input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  cursor: pointer;
+  background-position: center;
+  background-size: contain;
+}
+
+[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator:hover,
+[data-theme="dark"] .form-control[type="date"]::-webkit-calendar-picker-indicator:hover,
+[data-theme="dark"] .portal-text-input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+  filter: brightness(0) invert(1) drop-shadow(0 0 3px rgba(223, 192, 126, 0.7));
+  transform: scale(1.06);
 }
 
 textarea.form-control {
